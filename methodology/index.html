@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kick Up Your Startup!">
+    <meta name="author" content="">
+    <title>Kick Up Startup</title>
+    <link href="../css/lightbox.css" rel="stylesheet">
+    <link href="../css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body class="classic page">
+    <div class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <a class="navbar-brand" href="../"><span class="oi oi-arrow-left" title="Find out more" aria-hidden="true"></span><span>Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-sm-6 white">
+                        <div class="content">
+                            <h3>Methodology</h3>
+                            <p>Методология основанна на идеях <a href="https://37signals.com/remote" target="_blank">Remote. Office not required<sup class="oi oi-browser external" title="Wikipedia"></sup></a> и позволяет слаженно работать людям со всех уголков мира.</p>
+                            <p>IT — одна из тех сфер, в которых работа в офисе не является необходимостью. Это касается эффективности как разработки, так и ее управления. Нет никаких объективных причин, по которым управлять удаленной командой сложнее, чем командой в офисе. Есть отсутствие необходимых навыков и опыта у менеджеров воспитанных в рамках офисной парадигмы. Удаленная работа — это инструмент, который, как и любой другой, можно использовать эффективно или нет.</p>
+                            <p>Основные принципы:</p>
+                            <ul>
+                                <li>эффективность работы зависит от человека, а не места работы</li>
+                                <li>профессиональный рост обеспечивают курсы, митинги, конференции, хакатоны и т.д.</li>
+                                <li>каждый работает столько часов, сколько пожелает</li>
+                                <li>задачи могут выполняться группой разработчиков, что создает условия для самоорганизации эффективных команд</li>
+                                <li>возможность фиксированной оплаты снимает необходимость в контроле времени, а скорость и качество работы неразрывно связаны с рейтингом исполнителя</li>
+                                <li>code review независимыми разработчиками обеспечивает контроль качества</li>
+                            </ul>
+                            <p>Каждый проект начинается со следующих этапов:</p>
+                            <ul>
+                                <li>идея и анализ</li>
+                                <li>подбор стека технологий</li>
+                                <li>прототипирование (optional)</li>
+                                <li>разработка архитектуры</li>
+                                <li>в случае большого проекта разбиение его на микросервисы</li>
+                                <li>создание backlog. В идеале каждая <a href="https://en.wikipedia.org/wiki/Macrotasking" target="_blank">задача<sup class="oi oi-browser external" title="Wikipedia"></sup></a> может быть выполнена независимо либо состоять в виде последовательной цепочки задач</li>
+                                <li>подбор project manager'а (optional)</li>
+                            </ul>
+                            <p>После начинается стадия разработки. Наша цель — не контроль, а эффективность, которая обеспечивается простым workflow:</p>
+                            <ul>
+                                <li>постановка задачи product owner'ом или менеджером проекта. Большие задачи разбиваются на подзадачи, для возможности простого отслеживая прогресса</li>
+                                <li>оценка времени кандидатами. Выбор исполнителя</li>
+                                <li>разработка и покрытие тестами. Документирование</li>
+                                <li>code review другими разработчиками</li>
+                                <li>тестирование QA специалистом</li>
+                                <li>deployment</li>
+                                <li>закрытие задачи и оплата</li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-xl btn-page disabled" onclick="#">
+                                    <span class="oi oi-book" title="Find out more"></span>
+                                    <span>Guidelines. Coming</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 aside">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert contact-form__alert" id="form_message" role="alert"></div>
+                                <form class="contact__form" id="form_sendemail">
+                                    <div class="row">
+                                        <h3>Contact Us</h3>
+                                        <div class="form-group">
+                                            <p>Мы с вами лишь в одном шаге от сотрудничества! Пожалуйста, fill out our quick form, остальное за нами.</p>
+                                            <label for="name" class="sr-only">Your name</label>
+                                            <input name="name" class="form-control" id="name" placeholder="Full Name" type="text">
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email" class="sr-only">Your email address</label>
+                                            <input name="email" class="form-control" id="email" placeholder="Email" type="email">
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label for="message" class="sr-only">Message</label>
+                                                <textarea name="message" class="form-control" rows="8" id="message" placeholder="Message. Optional"></textarea>
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" id="form-captcha">
+                                            <div class="g-recaptcha" data-sitekey="6LcU9QETAAAAABOKm4BoKrhzTvdIsrzXTsl4sgpY"><div style="width: 304px; height: 78px;"><div><iframe src="css/anchor.htm" title="recaptcha widget" role="presentation" scrolling="no" name="undefined" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                                            <span class="help-block"></span>
+                                        </div>
+                                        <div class="col-sm-12 text-center">
+                                            <button type="submit" class="btn btn-xl btn-page">
+                                                <span class="oi oi-thumb-up" title="Join Us!" aria-hidden="true"></span>
+                                                <span>Join Us</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/custom.js"></script>
+</body>
+</html>
