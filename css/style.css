@@ -2084,7 +2084,7 @@ button.close {
   overflow: auto;
   padding: 32px 0;
 }
-.sidebar-menu__ul > li > a {
+.sidebar-menu__ul > li > a,.fullpage__nav > li > a{
   display: block;
   padding: 10px 15px;
   margin-left: 10px;
@@ -2098,7 +2098,10 @@ button.close {
   transition: color 0.3s;
 }
 .sidebar-menu__ul > li > a:hover,
-.sidebar-menu__ul > li > a:focus {
+.sidebar-menu__ul > li > a:focus,
+.fullpage__nav > li > a:hover,
+.fullpage__nav > li > a:focus
+ {
   background: transparent;
   color: #fcae11;
 }
