@@ -1905,7 +1905,7 @@ button.close {
     right: 51%;
     bottom: 0;
     height: 0;
-    border-bottom: 3px solid #0072dc;
+    border-bottom: 2px solid #0072dc;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -2004,21 +2004,6 @@ button.close {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.active .logo_bg,a:hover .logo_bg{background:url(../img/puff.png) 122px 140px no-repeat;display:block;width:200px;height:200px;visibility:hidden;opacity:0;transition:visibility 0s linear 1s,opacity 1s linear}
-.menu-1{-webkit-transition:background-position 1s ease-in-out;-moz-transition:background-position 1s ease-in-out;-o-transition:background-position 1s ease-in-out;transition:background-position 1s ease-in-out}
-.menu-2,.menu-3,.menu-4,.menu-5,.menu-6,.menu-7,.menu-8{-webkit-transition:background-position .25s ease-in-out;-moz-transition:background-position .25s ease-in-out;-o-transition:background-position .25s ease-in-out;transition:background-position .25s ease-in-out}
-.menu-1{background: url(../img/menu.png) no-repeat;height:200px;width:200px;background-position:0px 55px}
-  .active .menu-1,a:hover .menu-1{background: url(../img/menu-hover.png) no-repeat;background-position:0px 0px;display:block;height:200px;width:200px}
-.menu-2,.menu-3,.menu-4,.menu-5,.menu-6,.menu-7,.menu-8{background: url(../img/menu.png) no-repeat;display:block;height:55px;width:200px}
-  .active .menu-2,a:hover .menu-2,.active .menu-3,a:hover .menu-3,.active .menu-4,a:hover .menu-4,.active .menu-5,a:hover .menu-5,.active .menu-6,a:hover .menu-6,.active .menu-7,a:hover .menu-7,.active .menu-8,a:hover .menu-8
-  {background: url(../img/menu-hover.png) no-repeat}
-  .menu-2,.active .menu-2,a:hover .menu-2{background-position:0px -225px}
-  .menu-3,.active .menu-3,a:hover .menu-3{background-position:0px -280px}
-  .menu-4,.active .menu-4,a:hover .menu-4{background-position:0px -335px}
-  .menu-5,.active .menu-5,a:hover .menu-5{background-position:0px -390px}
-  .menu-6,.active .menu-6,a:hover .menu-6{background-position:0px -445px}
-  .menu-7,.active .menu-7,a:hover .menu-7{background-position:0px -500px}
-  .menu-8,.active .menu-8,a:hover .menu-8{background-position:0px -555px}
 .sidebar__menu_hidden {
   left: -100%;
 }
@@ -2049,7 +2034,6 @@ button.close {
 .sidebar-menu__ul > li > a,.fullpage__nav > li > a{
   display: block;
   padding: 10px 15px;
-  margin-left: 10px;
   color: #424242;
   text-decoration: none;
   overflow: hidden;
@@ -2058,6 +2042,9 @@ button.close {
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
+}
+.sidebar-menu__ul > li > a{
+  margin-left: 10px;
 }
 .sidebar-menu__ul > li > a:hover,
 .sidebar-menu__ul > li > a:focus,
@@ -2079,8 +2066,6 @@ html {
   /* Added !important to override smoothscroll.js height: auto; */
 }
 body.classic {
-  position: relative;
-  height: 100%;
   color: #555555;
   text-shadow: none;
 }
@@ -3732,8 +3717,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-fixed-top .nav > li{display: inline-block}
 }
 .sidebar__btn .fa-lg{vertical-align:0}
-.banner{background:url(../img/banner.jpg) 0 0 no-repeat;border:4px solid #fff;margin:-10px -40px;height:120px}
-.avatar{background-image:url(../img/avatar.jpg);border-radius:50%;border:4px solid #fff;display:block;margin:0 auto -42px;position:relative;top:-42px;width:104px;height:104px}
+.banner{border:4px solid #fff;margin:-10px -40px;height:120px}
+.avatar{clear:both;top:-40px;position:relative}
+  .avatar img{border-radius:50%;border:4px solid #fff;display:block;margin:0 auto -40px;top:-40px;width:104px;height:104px}
+.avatar-small{padding:12px!important}
+  .avatar-small img{border-radius:50%;border:1px solid #fff;box-shadow:0 0 0 2px #f2f2f2;width:46px;height:46px}
 .marging-top{margin-top:0}
 .stat {
     list-style: none;
@@ -3749,19 +3737,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     content: "\00b7";
 }
 .number{font-weight:bold;width:100%}
-.label {
-    font-family: Helvetica,Arial,sans-serif;
-    display: inline;
-    padding: .2em .6em .3em;
-    font-size: 11px;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25em;
-}
+.label{font-family:Helvetica,Arial,sans-serif;display:inline;padding:.2em .6em .3em;font-size:11px;font-weight:700;
+    line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}
 .label-default {
     background-color: #e0e0e0;
     color: #494949;
@@ -3773,3 +3750,28 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .ticket-btn:hover,.ticket-btn.active{color:#0072dc}
 .nav-tabs{margin:11px 0 -11px}
   .nav-tabs li > a{color:#555}
+.pointer{background:#fff;border:1px solid #f2f2f2;
+    -webkit-transition: background-color .5s linear, border .5s ease;
+          -moz-transition: background-color .5s linear, border .5s ease;
+          -o-transition: background-color .5s linear, border .5s ease;
+          -ms-transition: background-color .5s linear, border .5s ease;
+          transition: background-color .5s linear, border .5s ease}
+  .pointer:hover{background:#f9f9f9;border:1px solid #ccc;cursor:pointer;
+    -webkit-transition: background-color .5s linear, border .5s ease;
+          -moz-transition: background-color .5s linear, border .5s ease;
+          -o-transition: background-color .5s linear, border .5s ease;
+          -ms-transition: background-color .5s linear, border .5s ease;
+          transition: background-color .5s linear, border .5s ease}
+.editable{border-bottom:1px solid #f2f2f2}
+.editable{display:inline-block;padding:10px 15px}
+  .editable.avatar:hover img{box-shadow:0 0 0 2px #f2f2f2}
+  .banner-edit{background:url(../img/edit-banner.png) no-repeat!important}
+  .banner-edit:hover{box-shadow:0 0 0 2px #eee;cursor:pointer}
+.editable:focus{border-bottom:1px solid #0072dc;color:#111;outline:none}
+.editable_checkbox{margin:4px!important;position:relative;top:1px}
+.lock{background-color:#f9f9f9!important;border-color:#eee;opacity:.7;}
+  .lock:hover{background-color:#eee;cursor:not-allowed;}
+h3.editable,h4.editable{margin:0}
+sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;font-weight:700;line-height:1;color:#fff;
+  text-align:center;white-space:nowrap;vertical-align:middle;background-color:#0072dc;border-radius:12px;
+  position:relative;border:2px solid #fff;top:-5px;margin-left:-16px}

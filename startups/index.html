@@ -8,25 +8,30 @@
     <meta name="description" content="Kick Up Your Startup!">
     <meta name="author" content="">
     <title>Kick Up Startup</title>
-    <link href="css/lightbox.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/lightbox.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body class="classic page">
     <!-- PRELOADER
     ============================== -->
     <div class="preloader active" style="display: none;">
-        <img src="img/loading.gif" alt="Loading..." class="preloader__img" style="display: none;">
+        <img src="../img/loading.gif" alt="Loading..." class="preloader__img" style="display: none;">
     </div>
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="row">
-                <div class="col-xs-2"></div>
+                <div class="col-xs-2">
+                    <ul class="fullpage__nav nav navbar-nav pull-left">
+                        <li><a href="#" class="avatar-small"><img src="../img/avatar.jpg" /></a></li>
+                    </ul>
+                </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li class="active"><a href="#">Overview</a></li>
-                        <li><a href="team/index.html">Team</a></li>
+                        <li class="active"><a href="#">Feed</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#" class="btn btn-default">Create</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +62,7 @@
             <li><a href="../profile/index.html">Profile</a></li>
             <li><a href="#">Connections</a></li>
             <li><a href="#">Teams</a></li>
-            <li class="active"><a href="startups/index.html">Startups</a></li>
+            <li class="active"><a href="#">Startups</a></li>
             <!--<li><a href="#">Positions</a></li>
             <li><a href="#">Communities</a></li>
             <li><a href="#">Investors</a></li>-->
@@ -73,38 +78,22 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="row">
-                    <div class="white row-border">
-                        <div class="content clearfix">
-                            <h3>Ready to Join?</h3>
-                            <p>Suspendisse vel augue non tortor sodales porta id eu odio.</p>
-                            <div class="col-sm-12 text-center">
-                                <button type="submit" class="btn btn-link btn-xl btn-page">
-                                    <span class="fa fa-thumbs-up fa-lg" aria-hidden="true"></span>
-                                    <span>Sign up</span>
-                                </button>
-                                <a href="profile/0.html" class="btn btn-xl btn-page">
-                                    <span class="fa fa-thumbs-up fa-lg" aria-hidden="true"></span>
-                                    <span>Login</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="white row-border">
+                    <div class="white row-border pointer" onclick="window.location = '../index.html';">
                         <div class="content text-center">
-                            <div class="banner" style="background: url(img/banner-ks.jpg) center center no-repeat"></div>
-                            <div class="avatar"><img src="img/logo.jpg" /></div>
+                            <div class="banner" style="background: url(../img/banner-ks.jpg) center center no-repeat"></div>
+                            <div class="avatar"><img src="../img/logo.jpg" /></div>
                             <h3><ul class="stat"><li>Kick Up Startup</li></ul></h3>
                             <h4>A community based Startup Foundry</h4>
                             <ul class="stat"><li>Prague, Czech Republic</li></ul>
                             <ul class="stat"><li>1,508 Followers</li><li>288 Following</li><li>184 Posts</li></ul>
                         </div>
-                        <h3 class="marging-top">Mission</h3>
+                        <h3 class="marging-top">Summary</h3>
                         <p>Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
                         <div class="profile-footer clearfix">
                             <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="btn ticket-btn active">
                                     <span class="fa fa-star fa-lg" title="Following"></span>
-                                    <span>Follow</span>
+                                    <span>Following</span>
                                 </a>
                                 <a href="#" class="btn ticket-btn">
                                     <span class="fa fa-envelope fa-lg" title="Contact"></span>
@@ -121,12 +110,45 @@
                             </div>
                         </div>
                     </div>
+                    <div class="white row-border pointer" onclick="window.location = '../index.html';">
+                        <div class="content text-center">
+                            <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
+                            <div class="avatar"><img src="../img/no-photo.png" /></div>
+                            <h3><ul class="stat"><li>Another startup</li></ul></h3>
+                            <h4>Tagline</h4>
+                            <ul class="stat"><li>Prague, Czech Republic</li></ul>
+                            <ul class="stat"><li>8 Followers</li><li>23 Following</li><li>7 Posts</li></ul>
+                        </div>
+                        <h3 class="marging-top">Summary</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis. Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et.</p>
+                        <div class="profile-footer clearfix">
+                            <div class="pull-right">
+                                <a href="#" class="btn ticket-btn">
+                                    <span class="fa fa-star fa-lg" title="Follow"></span>
+                                    <span>Follow</span>
+                                </a>
+                                <a href="#" class="btn ticket-btn">
+                                    <span class="fa fa-envelope fa-lg" title="Contact"></span>
+                                    <span>Contact</span>
+                                </a>
+                                <a href="#" class="btn ticket-btn">
+                                    <span class="fa fa-share-alt-square fa-lg" title="Share"></span>
+                                    <span>Share</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white row-border">
+                        <div class="text-center">
+                            <h4>You have reached the end</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/jquery_002.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/jquery_002.js"></script>
+    <script src="../js/custom.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
