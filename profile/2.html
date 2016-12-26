@@ -23,11 +23,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
+                    <ul class="fullpage__nav nav navbar-nav pull-left">
+                        <li><a href="#" class="avatar-small"><img src="../img/notifications.png" /><sup class="badge">1</sup></a></li>
+                    </ul>
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li class="active"><a href="#">Overview</a></li>
+                        <li class="active"><a href="#">Profile</a></li>
+                        <li><a href="../connections/index.html">Connections</a></li>
                         <li><a href="../member/index.html">Member</a></li>
+                        <li><a href="../lists/index.html">Lists</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,8 +60,8 @@
         <div class="sidebar-menu__brand"></div>
         <!-- Sidebar links -->
         <ul class="fullpage__nav sidebar-menu__ul nav">
-            <li class="active"><a href="#">Profile</a></li>
-            <li><a href="#">Connections</a></li>
+            <li class="active"><a href="0.html">Profile</a></li>
+            <li><a href="#">People</a></li>
             <li><a href="#">Teams</a></li>
             <li><a href="../startups/index.html">Startups</a></li>
             <!--<li><a href="#">Positions</a></li>
@@ -76,24 +81,20 @@
                 <div class="row">
                     <div class="white row-border">
                         <div class="content text-center clearfix">
-                            <div class="banner editable" style="background: url(../img/no-banner.jpg) center center no-repeat"></div>
-                            <div class="avatar editable"><a href="#"><img src="../img/no-photo.png" /></a></div>
-                            <h3><ul class="stat"><li><span class="editable" contenteditable="true">Your name</span></li><li>$<span class="editable" contenteditable="true">Undefined</span> / hr</li></ul></h3>
-                            <h4 class="editable" contenteditable="true">Tagline. 140 charachetrs</h4>
-                            <ul class="stat"><li><span class="editable" contenteditable="true">Your location</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
-                            <p class="editable" contenteditable="true">Your skills. Separate skills with commas</p>
+                            <div class="banner" style="background: url(../img/banner-avatar.jpg) center center no-repeat"></div>
+                            <div class="avatar"><img src="../img/avatar.jpg" /></div>
+                            <h3><ul class="stat"><li><span class="editable" contenteditable="true">John Smith</span></li><li>$<span class="editable" contenteditable="true">20</span> / hr</li></ul></h3>
+                            <h4 class="editable" contenteditable="true">Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
+                            <ul class="stat"><li><span class="editable" contenteditable="true">London, United Kingdom</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
+                            <p class="editable" contenteditable="true">Java, Java Script, HTML5, CSS</p>
                         </div>
                         <h3 class="marging-top">Summary</h3>
-                        <p class="editable" contenteditable="true">Write briefly about yourself in 1024 charachetrs</p>
+                        <p class="editable" contenteditable="true">Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
                         <div class="profile-footer clearfix">
                             <div class="pull-right">
                                 <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-envelope fa-lg" title="Messages"></span>
+                                    <span class="fa fa-envelope fa-lg" title="Messages"></span><sup class="badge">1</sup>
                                     <span>Messages</span>
-                                </a>
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-check-square fa-lg" title="Alerts"></span>
-                                    <span>Alerts</span>
                                 </a>
                                 <a href="#" class="btn ticket-btn">
                                     <span class="fa fa-share-alt-square fa-lg" title="Share"></span>
@@ -102,6 +103,11 @@
                             </div>
                         </div>
                     </div>
+                    <ul class="nav nav-tabs">
+                      <li role="presentation" class="active"><a href="#">Profile</a></li>
+                      <li role="presentation"><a href="#">Portfolio</a></li>
+                      <li role="presentation"><a href="#">Promotion</a></li>
+                    </ul>
                     <div class="white row-border">
                         <div class="content">
                             <h3>Interests</h3>
@@ -111,21 +117,51 @@
                     </div>
                     <div class="white row-border clearfix">
                         <div class="content">
-                            <h3>Interests</h3>
-                            <p>Указанные вами интересы определяют стратегию рекомендаций от нашей системы. Мы верим, что наибольшая отдача возможна лишь от людей занимающихся любимым делом. В данном разделе важно указать не сферы ваших знаний и умений, а то, какими проектами вы бы хотели заниматься или чему научиться.</p>
+                            <h3>Certifications & Courses</h3>
+                            <p>Если у вас есть сертификаты или завершенные курсы, то вы сможете указать здесь всю необходимую информацию в свободной форме.</p>
                             <div class="col-sm-12 text-center">
-                                <a href="1.html" class="btn btn-xl btn-page">
+                                <a href="#" class="btn btn-xl btn-page">
                                     <span class="fa fa-check-circle fa-lg" aria-hidden="true"></span>
                                     <span>Start</span>
                                 </a>
                             </div>
                         </div>
                     </div>
+                    <div class="white row-border clearfix lock-info">
+                        <div class="content">
+                            <h3><span class="fa fa-lock"></span>Not time yet</h3>
+                            <p>Блоки ниже будут открываться автоматически по мере заполнения предыдущих разделов. Тем не менее, вы вольны открыть их в любой момент кликнув на нужный.</p>
+                        </div>
+                    </div>
+                    <div class="white row-border clearfix lock">
+                        <div class="content">
+                            <h3>Honors & Awards</h3>
+                            <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+                        </div>
+                    </div>
+                    <div class="white row-border clearfix lock">
+                        <div class="content">
+                            <h3>Education</h3>
+                            <p>Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.</p>
+                        </div>
+                    </div>
+                    <div class="white row-border clearfix lock">
+                        <div class="content">
+                            <h3>Languages</h3>
+                            <p>Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui.</p>
+                        </div>
+                    </div>
+                    <div class="white row-border clearfix lock">
+                        <div class="content">
+                            <h3>Personal Information</h3>
+                            <p>Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="../js/jquery_002.js"></script>
+    <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </body>

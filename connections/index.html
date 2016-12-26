@@ -23,15 +23,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
-                    <ul class="fullpage__nav nav navbar-nav navbar-left hidden-xs">
-                        <li><a href="#"><i class="fa fa-lg fa-home"></i>Home</a></li>
+                    <ul class="fullpage__nav nav navbar-nav pull-left">
+                        <li><a href="#" class="avatar-small"><img src="../img/no-notifications.png" /></a></li>
                     </ul>
                 </div>
                 <div class="col-xs-10">
-                    <ul class="fullpage__nav nav navbar-nav navbar-right">
-                        <li><a href="#">Timeline</a></li>
-                        <li class="active"><a href="#">Profile</a></li>
-                        <li><a href="#">Startups</a></li>
+                    <ul class="fullpage__nav nav navbar-nav pull-right">
+                        <li><a href="../profile/index.html">Overview</a></li>
+                        <li class="active"><a href="">Connections</a></li>
+                        <li><a href="../member/index.html">Member</a></li>
+                        <li><a href="../lists/index.html">Lists</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,17 +60,17 @@
         <div class="sidebar-menu__brand"></div>
         <!-- Sidebar links -->
         <ul class="fullpage__nav sidebar-menu__ul nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profiles</a></li>
-            <li><a href="#">Positions</a></li>
+            <li class="active"><a href="#">Profile</a></li>
+            <li><a href="#">People</a></li>
             <li><a href="#">Teams</a></li>
-            <li><a href="#">Startups</a></li>
+            <li><a href="../startups/index.html">Startups</a></li>
+            <!--<li><a href="#">Positions</a></li>
             <li><a href="#">Communities</a></li>
-            <li><a href="#">Investors</a></li>
+            <li><a href="#">Investors</a></li>-->
             <li class="divider"></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Logout</a></li>
+            <!--<li><a href="#">Settings</a></li>-->
+            <!--<li><a href="#">Help</a></li>-->
+            <li><a href="../index.html">Logout</a></li>
         </ul>
 
     </div> <!-- / .sidebar-menu__ul -->
@@ -79,73 +80,23 @@
             <div class="col-xs-12">
                 <div class="row">
                     <div class="white row-border">
-                        <div class="content text-center clearfix">
-                            <div class="banner"></div>
-                            <div class="avatar"></div>
-                            <h3><ul class="stat"><li>John Smith</li><li>$20 / hr</li></ul></h3>
-                            <ul class="stat"><li>508 Followers</li><li>418 Following</li><li>12 Posts</li></ul>
-                            <h4>Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
-                            <ul class="stat"><li>London, United Kingdom</li><li>Remote</li></ul>
-                            <p><span class="label label-default">Java</span> <span class="label label-default">Java Script</span> <span class="label label-default">HTML5</span> <span class="label label-default">CSS</span></p>
-                        </div>
-                        <h3 class="marging-top">Overview</h3>
-                        <p>Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                        <div class="profile-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="btn ticket-btn active">
-                                    <span class="fa fa-star fa-lg" title="Methodology"></span>
-                                    <span>Following</span>
-                                </a>
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-envelope fa-lg" title="Methodology"></span>
-                                    <span>Contact</span>
-                                </a>
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-check-square fa-lg" title="Methodology"></span>
-                                    <span>Hire</span>
-                                </a>
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-share-alt-square fa-lg" title="Methodology"></span>
-                                    <span>Share</span>
+                        <div class="content clearfix">
+                            <h3>Find like-minded persons</h3>
+                            <p>После заполнения <a href="../profile/index.html">профайла</a> следующим этапом станет поиск единомышленников. Сила Kick Up Startup именно в community, т.е. в объединении таких же профессионалов как вы для создания A-teams и перспективных стартапов.</p>
+                            <div class="col-sm-12 text-center">
+                                <a href="#" class="btn btn-xl btn-page">
+                                    <span class="fa fa-check-circle fa-lg" aria-hidden="true"></span>
+                                    <span>Start</span>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                    <ul class="nav nav-tabs">
-                      <li role="presentation" class="active"><a href="#">Connections</a></li>
-                      <li role="presentation"><a href="#">Startups</a></li>
-                      <li role="presentation"><a href="#">Teams</a></li>
-                      <li role="presentation"><a href="#">Communities</a></li>
-                      <li role="presentation"><a href="#">Issues</a></li>
-                    </ul>
-                    <div class="white row-border">
-                        <div class="content">
-                            <h3>Profile</h3>
-                            <p>Разработка и управление проектами ведется в соответствии с созданной нами <a href="../methodology">методологией</a> удаленной работы. Данный набор принципов и best practices открывает возможность осуществлять поиск, найм и обучение таланливых разработчиков по всему миру без территориальных ограничений. А общий подход, единые стандарты и правила ведения разработки позволяют команде быстро переключаться между проектами и быть Agile. На нашей площадке вы найдете менторов и специалистов, которые помогут вам в реализации проекта.</p>
-                            <p>You’ll get daily updates, weekly calls and regular product demonstrations so you can keep abreast control your project.</p>
-                            <p>Our business success depends on your success, so we are highly motivated to see your project successful.</p>
-                        </div>
-                    </div>
-                    <div class="white row-border">
-                        <div class="content">
-                            <h3>Crowdsourcing</a></h3>
-                            <p><a href="https://en.wikipedia.org/wiki/Crowdsourcing" target="_blank">Crowdsourcing<sup class="fa fa-window-maximize fa-lg external" title="Wikipedia"></sup></a> is a specific sourcing model in which individuals or organizations use contributions from Internet users to obtain needed services or ideas. Advantages of using crowdsourcing may include improved costs, speed, quality, flexibility, scalability, or diversity. Интересные и полезные обществу open-source проекты могут привлекать людей участвовать в разработке, тестировании и продвижении за небольшие деньги, а зачастую и вовсе бесплатно. А возможность предоставлять equity в качестве оплаты дополнительно увеличивает шанс нахождения подходящих кандидатов. The best-known example of crowdsourcing is crowdfunding, the collection of funds from the crowd. Возможность сбора средств будет со временем представлена на нашей площадке.</p>
-                            <p>Один из отличительных признаков краудсорсинга — разбивка работы на <a href="https://en.wikipedia.org/wiki/Microwork" target="_blank">небольшие части или модули<sup class="oi oi-browser external" title="Wikipedia"></sup></a>.</p>
-                        </div>
-                        <div class="content">
-                            <h3>Collaborative development</a></h3>
-                            <p>The <a href="https://en.wikipedia.org/wiki/Collaborative_software_development_model" target="_blank">Collaborative software development<sup class="fa fa-window-maximize fa-lg external" title="Wikipedia"></sup></a> model is a style of software development whose focus is on public availability and communication, usually via the Internet. Regardless of its origins within the software industry, “Collaborative Software Development" is now largely used by most technological disciplines. Its widespread usage can be attributed to its effectiveness. Today, Collaborative Software Development, the term itself has carried over from its original meaning and its ties to open source coding to that of describing a relationship between the end-user and the developer.</p>
-                            <p>Agile Software Development is a term in close proximity though has as one different component or aspect. Agile Development is more developer driven and Collaborative Development is more user-driven. Both though are the same in terms of using collaboration as a method to propel the project along.</p>
-                            <p>It is the dominant model used in development of free software. It is very compatible with free software because free software projects publish the source code of any published programs, so they do not have the secrecy reason for hiding their communications and in-progress development.</p>
-                            <p>Massive scale peer review of software changes and commits is possible under the collaborative development model. This has been summarized by Raymond in what he terms <a href="https://en.wikipedia.org/wiki/Linus%27s_Law" target="_blank">Linus's Law<sup class="fa fa-window-maximize fa-lg external" title="Wikipedia"></sup></a>: many eyeballs make all bugs shallow.</p>
-                            <p>One of the key facts is getting users involved. Many organizations have created special programs to ease enrolling new committers.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="../js/jquery_002.js"></script>
+    <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
