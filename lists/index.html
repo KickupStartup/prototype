@@ -22,17 +22,19 @@
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="row">
-                    <ul class="nav navbar-nav pull-left">
-                        <li><a href="../notifications/index.html" class="avatar-small pull-left hidden-xs"><img src="../img/no-notifications.png" /></a></li>
+                <div class="col-xs-2">
+                    <ul class="fullpage__nav nav navbar-nav pull-left">
+                    <li><a href="../notifications/index.html" class="avatar-small pull-left hidden-xs"><img src="../img/no-notifications.png" /></a></li>
                     </ul>
-                    <ul class="nav navbar-nav pull-right">
-                        <li><a href="../profile/index.html">Cover</a></li>
-                        <li><a href="../profile/index.html">Offers</a></li>
-                        <li><a href="../profile/index.html">Feed</a></li>
-                        <li><a href="../profile/index.html">Timeline</a></li>
-                        <li><a href="../profile/index.html">Profile</a></li>
-                        <li class="active"><a href="#">Lists</a></li>
+                </div>
+                <div class="col-xs-10">
+                    <ul class="fullpage__nav nav navbar-nav pull-right">
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Following</a></li>
+                        <li class="active"><a href="#">Yours</a></li>
                     </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -58,13 +60,13 @@
         <div class="sidebar-menu__brand"></div>
         <!-- Sidebar links -->
         <ul class="fullpage__nav sidebar-menu__ul nav">
-            <li class="active"><a href="#">Profile</a></li>
+            <li><a href="#">Profile</a></li>
             <li><a href="#">People</a></li>
             <li><a href="#">Teams</a></li>
             <li><a href="../startups/index.html">Startups</a></li>
-            <li><a href="#">Positions</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li class="active"><a href="#">Lists</a></li>
             <li><a href="#">Communities</a></li>
-            <li><a href="#">Lists</a></li>
             <li><a href="#">Investors</a></li>
             <li class="divider"></li>
             <li><a href="#">Notifications</a></li>
@@ -81,14 +83,59 @@
                 <div class="row">
                     <div class="white row-border">
                         <div class="content clearfix">
-                            <h3>Ready to share</h3>
-                            <p>Are you ready to share your skills and knowledge with the world? Списки помогут вам каталогизировать свои и сторонние посты. На следующем этапе мы создадим для вас первый список под именем "Блог". Ведение блога — это прекрасная возможность не только поделиться своими знаниями, но и привлечь followers и обратить на себя внимание лучших команд и стартапов.</p>
+                            <h3>Search</h3>
                             <div class="col-sm-12 text-center">
-                                <a href="#" class="btn btn-xl btn-page">
+                                <a href="1.html" class="btn btn-xl btn-page">
                                     <span class="fa fa-check-circle fa-lg" aria-hidden="true"></span>
-                                    <span>Start</span>
+                                    <span>Search</span>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="white row-border">
+                        <div class="row">
+                            <div class="row-height">
+                              <div class="col-xs-12 col-sm-6">
+                                <div class="white card-2 create-short row-border pointer" onclick="window.location = 'create.html';">
+                                    <div class="text-center">
+                                        <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
+                                        <div class="avatar"><img src="../img/create.png" /></div>
+                                        <h3><ul class="stat"><li>Create list</li></ul></h3>
+                                        <h4>Click to create a new list</h4>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6">
+                                    <div class="white card-2 row-border pointer" onclick="window.location = '../index.html';">
+                                    <div class="text-center">
+                                        <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
+                                        <div class="avatar"><img src="../img/no-photo.png" /></div>
+                                        <h3><ul class="stat"><li>Blog</li></ul></h3>
+                                        <h4>My awesome blog :-)</h4>
+                                        <ul class="stat"><li>87 Followers</li></ul>
+                                        <ul class="stat"><li>4 Posts</li><li><a href="#" class="btn">Write</a></li></ul>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6">
+                                    <div class="white card-2 row-border pointer" onclick="window.location = '../index.html';">
+                                    <div class="text-center">
+                                        <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
+                                        <div class="avatar"><img src="../img/no-photo.png" /></div>
+                                        <h3><ul class="stat"><li>My favorites startups</li></ul></h3>
+                                        <h4>Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget.</h4>
+                                        <ul class="stat"><li>28 Followers</li><li><a href="#" class="btn">Follow</a></li></ul>
+                                        <ul class="stat"><li>11 Members</li><li><a href="#" class="btn">Join</a></li></ul>
+                                        <ul class="stat"><li>3 Posts</li><li><a href="#" class="btn">Write</a></li></ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white row-border col-xs-12 clearfix">
+                        <div class="text-center">
+                            <h4>You have reached the end</h4>
                         </div>
                     </div>
                 </div>
