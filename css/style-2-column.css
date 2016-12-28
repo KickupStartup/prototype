@@ -2275,6 +2275,9 @@ body.classic footer .social__item:focus {
   text-decoration: none;
 }
 .main .white{margin:10px 0;padding:10px 40px}
+  .main .card-2{padding:10px 22px;margin:10px 0 20px}
+    .main .card-2 .banner{margin:-10px -20px}
+    .main .card-2 .btn{margin:0!important;padding:0}
 .main .white{background-color:#fff}
 .main .content{padding-bottom: 40px}
   .page .content{padding-bottom:10px}
@@ -2447,6 +2450,9 @@ body.classic footer .social__item:focus {
     bottom: auto;
     margin-top: -15px;
   }
+  .main .card-2{height:460px}
+  .main .card-2 h3{height:40px;overflow:hidden;text-overflow:ellipsis;word-break:break-word}
+  .main .card-2 h4{height:100px;overflow:hidden;text-overflow:ellipsis;word-break:break-word}
 }
 /* Indicators */
 .fp-slidesNav ul li {
@@ -2906,6 +2912,55 @@ body:not(.classic) .site-wrapper .container {
 #recaptcha_audio_play_again {
   cursor: pointer;
 }
+.s1_1,.s1_2,.s1_3,.s1_4,.s1_5,
+.s2_1,.s2_2,.s2_3,.s2_4,.s2_5,.s2_6,
+.s3_1,.s3_2,.s3_3,.s3_4,.s3_5,
+.s4_1,.s4_2,.s4_3,.s4_4,
+.s5_1,.s5_2,.s5_3,
+.s6_1,.s6_2,.s6_3,.s6_4,
+.s7_1,.s7_2,.s7_3
+{display:inline-block;padding:0 8px;}
+  .s1_1>div,.s1_2>div,.s1_3>div,.s1_4>div,.s1_5>div,
+  .s2_1>div,.s2_2>div,.s2_3>div,.s2_4>div,.s2_5>div,.s2_6>div,
+  .s3_1>div,.s3_2>div,.s3_3>div,.s3_4>div,.s3_5>div,
+  .s4_1>div,.s4_2>div,.s4_3>div,.s4_4>div,
+  .s5_1>div,.s5_2>div,.s5_3>div,
+  .s6_1>div,.s6_2>div,.s6_3>div,.s6_4>div,
+  .s7_1>div,.s7_2>div,.s7_3>div
+  {background:url(../img/stack.gif) no-repeat;display:block;margin:0 auto;height:64px;width:64px}
+  .s1_1>div{background-position:0 0}
+  .s1_2>div{background-position:0 -64px}
+  .s1_3>div{background-position:0 -128px}
+  .s1_4>div{background-position:0 -4864px}
+  .s1_5>div{background-position:0 -4928px}
+
+  .s2_1>div{background-position:0 -192px}
+  .s2_2>div{background-position:0 -256px}
+  .s2_3>div{background-position:0 -320px}
+  .s2_4>div{background-position:0 -384px}
+  .s2_5>div{background-position:0 -448px}
+  .s2_6>div{background-position:0 -512px}
+
+  .s3_1>div{background-position:0 -576px}
+  .s3_2>div{background-position:0 -640px}
+  .s3_3>div{background-position:0 -704px}
+  .s3_4>div{background-position:0 -768px}
+  .s3_5>div{background-position:0 -832px}
+
+  .s4_1>div{background-position:0 -896px}
+  .s4_2>div{background-position:0 -960px}
+  .s4_3>div{background-position:0 -1024px}
+  .s4_4>div{background-position:0 -1088px}
+
+  .s5_1>div{background-position:0 -4672px}
+  .s5_2>div{background-position:0 -4736px}
+  .s5_3>div{background-position:0 -4804px}
+
+  .s6_1>div{background-position:0 -2884px}
+  .s6_2>div{background-position:0 -2944px}
+  .s6_3>div{background-position:0 -3012px}
+  .s6_4>div{background-position:0 -3072px}
+
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {
@@ -2919,6 +2974,9 @@ a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none;
 }
+.oi{margin-right:4px}
+
+
 
 
 
@@ -3719,8 +3777,6 @@ h3.editable,h4.editable{margin:0}
 sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;font-weight:700;line-height:1;color:#fff;
   text-align:center;white-space:nowrap;vertical-align:middle;background-color:#0072dc;border-radius:12px;
   position:relative;border:2px solid #fff;top:-5px;margin-left:-16px}
-.create{padding-bottom:25px!important}
-.end{color:#999}
 
 .tooltip {
   position: absolute;
