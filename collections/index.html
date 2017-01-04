@@ -23,16 +23,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
-                    <ul class="nav navbar-nav pull-left">
-                        <li><a href="#" class="avatar-small"><img src="../img/notifications.png" /><sup class="badge">1</sup></a></li>
+                    <ul class="nav pull-left">
+                    <li><a href="../notifications/index.html" class="avatar-small pull-left"><img src="../img/no-notifications.png" /></a></li>
                     </ul>
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li><a href="cover.html">Cover</a></li>
-                        <li class="active"><a href="#">Overview</a></li>
-                        <li><a href="member.html">Member</a></li>
-                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Following</a></li>
+                        <li class="active"><a href="#">Yours</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,60 +60,91 @@
         <div class="sidebar-menu__brand"></div>
         <!-- Sidebar links -->
         <ul class="sidebar-menu__ul nav">
-            <li class="active"><a href="../profile/index.html">Profile</a></li>
+            <li><a href="../profile/index.html">Profile</a></li>
             <li><a href="../people/index.html">People</a></li>
             <li><a href="../teams/index.html">Teams</a></li>
             <li><a href="../startups/index.html">Startups</a></li>
             <li><a href="../jobs/index.html">Jobs</a></li>
             <li><a href="../communities/index.html">Communities</a></li>
-            <li><a href="../collections/index.html">Collections</a></li>
+            <li class="active"><a href="../collections/index.html">Collections</a></li>
             <li><a href="../events/index.html">Events</a></li>
             <li class="divider"></li>
             <li><a href="../settings/index.html">Settings</a></li>
             <li><a href="../help/index.html">Help</a></li>
             <li><a href="../index.html">Logout</a></li>
         </ul>
-
     </div> <!-- / .sidebar-menu__ul -->
 
     <div class="container main">
         <div class="row">
             <div class="col-xs-12">
                 <div class="row">
-                    <div class="white row-border">
-                        <div class="content text-center clearfix">
-                            <div class="banner" style="background: url(../img/banner-avatar.jpg) center center no-repeat"></div>
+                    <div class="btn-main text-center clearfix">
+                        <a href="#" class="btn btn-xl btn-page" data-toggle="modal" data-target="#basicModal">
+                            <span class="fa fa-check-circle fa-lg" aria-hidden="true"></span>
+                            <span>Create</span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-tabs">
+                      <li><a href="#">Cover</a></li>
+                      <li class="active"><a href="#">Overview</a></li>
+                      <li><a href="#">Entities</a></li>
+                      <li><a href="#">Followers</a></li>
+                      <li><a href="#">Promotion</a></li>
+                    </ul>
+                    <div class="white row-border clearfix">
+                        <div class="text-center">
+                            <div class="banner" style="background: url(../img/blog-banner.jpg) center center no-repeat"></div>
                             <div class="avatar"><img src="../img/avatar.jpg" /></div>
-                            <h3><ul class="stat"><li><span class="editable" contenteditable="true">John Smith</span></li><li>$<span class="editable" contenteditable="true">20</span> / hr</li></ul></h3>
-                            <h4 class="editable" contenteditable="true">Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
-                            <ul class="stat"><li><span class="editable" contenteditable="true">London, United Kingdom</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
-                            <p class="editable" contenteditable="true">Java, Java Script, HTML5, CSS</p>
+                            <h3><ul class="stat"><li>Blog</li></ul></h3>
+                            <h4><ul class="stat"><li>by John Smith</li></ul></h3>
+                            <ul class="stat"><li>217 Followers</li><li>19 Posts</li></ul>
                         </div>
-                        <p class="editable" contenteditable="true">Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
+                        <p>Мой блог. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et.</p>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
                                 <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-envelope fa-lg" title="Messages"></span><sup class="badge">2</sup>
-                                    <span>Messages</span>
+                                    <span class="fa fa-star fa-lg" title="Follow"></span>
+                                    <span>Follow</span>
                                 </a>
                                 <a href="#" class="btn ticket-btn">
                                     <span class="fa fa-share-alt fa-lg" title="Share"></span>
                                     <span>Share</span>
                                 </a>
+                                <a href="#" class="btn ticket-btn">
+                                    <span class="fa fa-child fa-lg" title="Public"></span>
+                                    <span>Public</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <ul class="nav nav-tabs">
-                      <li><a href="index.html">Details</a></li>
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li class="active"><a href="#">Promotion</a></li>
-                      <li><a href="followers.html">Followers</a></li>
+                      <li><a href="#">Cover</a></li>
+                      <li class="active"><a href="#">Overview</a></li>
+                      <li><a href="entities.html">Entities</a></li>
+                      <li><a href="#">Followers</a></li>
+                      <li><a href="#">Promotion</a></li>
                     </ul>
-                    <div class="white row-border">
-                        <div class="content">
-                            <h3>Promotion</h3>
-                            <p>Promotion tips. Первым этапом будет добавление контактов через linkedin и др. соцсети, шаринг профиля в соцсети.</p>
-                            <p>Затем создание cover, затем offers, создание блога, создание или участие в communities, продвижение через нашу систему, поиск follower и т.д. Vivamus vulputate, lacus non porta blandit, ex turpis ultrices justo, sit amet faucibus tortor augue id nulla. Curabitur nec interdum tellus, interdum feugiat ante. Proin quis quam tincidunt, porta velit posuere, gravida est. Nulla sit amet tempus justo, quis commodo massa.</p>
+                    <div class="white row-border clearfix">
+                        <div class="text-center">
+                            <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
+                            <div class="avatar"><img src="../img/no-photo.png" /></div>
+                            <h3><ul class="stat"><li>Contacts</li></ul></h3>
+                            <h4><ul class="stat"><li>by John Smith</li></ul></h3>
+                            <ul class="stat"><li>19 Profiles</li></ul>
+                        </div>
+                        <p>Для добавления нужно нажать follow в нужном профайле или др. сущности и выбрать нужную коллекцию.</p>
+                        <div class="card-footer clearfix">
+                            <div class="pull-right">
+                                <a href="#" class="btn ticket-btn">
+                                    <span class="fa fa-envelope-open fa-lg" title="Invite"></span>
+                                    <span>Invite</span>
+                                </a>
+                                <a href="#" class="btn ticket-btn">
+                                    <span class="fa fa-lock fa-lg" title="Private"></span>
+                                    <span>Private</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="white row-border end clearfix">
@@ -125,6 +156,7 @@
             </div>
         </div>
     </div>
+    
     <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
     <script src="../js/bootstrap.min.js"></script>

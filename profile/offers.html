@@ -23,16 +23,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
-                    <ul class="fullpage__nav nav navbar-nav pull-left">
-                        <li><a href="#" class="avatar-small"><img src="../img/no-notifications.png" /></a></li>
+                    <ul class="nav navbar-nav pull-left">
+                        <li><a href="#" class="avatar-small"><img src="../img/notifications.png" /><sup class="badge">1</sup></a></li>
                     </ul>
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li><a href="../profile/cover.html">Cover</a></li>
-                        <li><a href="../profile/offer.html">Offer</a></li>
-                        <li><a href="../profile/index.html">Overview</a></li>
-                        <li class="active"><a href="#">Member</a></li>
+                        <li><a href="cover.html">Cover</a></li>
+                        <li class="active"><a href="offers.html">Offers</a></li>
+                        <li><a href="index.html">Overview</a></li>
+                        <li><a href="member.html">Member</a></li>
+                        <li><a href="collections.html">Collections</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,16 +60,15 @@
         <!-- Sidebar brand name -->
         <div class="sidebar-menu__brand"></div>
         <!-- Sidebar links -->
-        <ul class="fullpage__nav sidebar-menu__ul nav">
-            <li class="active"><a href="../profile/index.html">Profile</a></li>
+        <ul class="sidebar-menu__ul nav">
+            <li><a href="../profile/index.html">Profile</a></li>
             <li><a href="../people/index.html">People</a></li>
             <li><a href="../teams/index.html">Teams</a></li>
             <li><a href="../startups/index.html">Startups</a></li>
             <li><a href="../jobs/index.html">Jobs</a></li>
             <li><a href="../communities/index.html">Communities</a></li>
-            <li><a href="../lists/index.html">Lists</a></li>
-            <li><a href="../investors/index.html">Investors</a></li>
-<li><a href="../events/index.html">Events</a></li>
+            <li><a href="../collections/index.html">Collections</a></li>
+            <li><a href="../events/index.html">Events</a></li>
             <li class="divider"></li>
             <li><a href="../settings/index.html">Settings</a></li>
             <li><a href="../help/index.html">Help</a></li>
@@ -81,29 +81,23 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="row">
-                    <ul class="nav nav-tabs">
-                      <li role="presentation" class="active"><a href="#">Teams</a></li>
-                      <li role="presentation"><a href="#">Startups</a></li>
-                      <li role="presentation"><a href="#">Communities</a></li>
-                    </ul>
                     <div class="white row-border">
-                        <div class="content clearfix">
-                            <h3>Search</h3>
-                            <div class="col-sm-12 text-center">
-                                <a href="1.html" class="btn btn-xl btn-page">
-                                    <span class="fa fa-check-circle fa-lg" aria-hidden="true"></span>
-                                    <span>Search</span>
-                                </a>
-                            </div>
+                        <div class="content text-center clearfix">
+                            <div class="banner" style="background: url(../img/banner-avatar.jpg) center center no-repeat"></div>
+                            <div class="avatar"><img src="../img/avatar.jpg" /></div>
+                            <h3><ul class="stat"><li><span class="editable" contenteditable="true">John Smith</span></li><li>$<span class="editable" contenteditable="true">20</span> / hr</li></ul></h3>
+                            <h4 class="editable" contenteditable="true">Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
+                            <ul class="stat"><li><span class="editable" contenteditable="true">London, United Kingdom</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
+                            <p class="editable" contenteditable="true">Java, Java Script, HTML5, CSS</p>
                         </div>
+                        
+                        <p class="editable" contenteditable="true">Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
                     </div>
-                    <div class="white row-border pointer" onclick="window.location = '../profile/index.html';">
-                        <div class="content text-center">
-                            <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
-                            <div class="avatar"><img src="../img/create.png" /></div>
+                    <div class="white row-border">
+                        <div class="content">
+                            <h3>Offers</h3>
+                            <p>Suspendisse vel augue non tortor sodales porta id eu odio. Aliquam erat volutpat. Vivamus id quam suscipit, consectetur enim imperdiet, tristique enim. Nam vulputate at dui id consequat. <a href="#">link</a> Mauris ut ligula eros. Vivamus vulputate, lacus non porta blandit, ex turpis ultrices justo, sit amet faucibus tortor augue id nulla. Curabitur nec interdum tellus, interdum feugiat ante. Proin quis quam tincidunt, porta velit posuere, gravida est. Nulla sit amet tempus justo, quis commodo massa.</p>
                         </div>
-                        <h3><ul class="stat"><li>Create Team</li></ul></h3>
-                        <h4>Click to create a new Brilliant Team!</h4>
                     </div>
                 </div>
             </div>
