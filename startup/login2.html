@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kick Up Your Startup!">
+    <meta name="author" content="">
+    <title>Kick Up Startup</title>
+    <link href="../css/materialize.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <ul class="fullpage__nav nav navbar-nav pull-left"></ul>
+                </div>
+                <div class="col-xs-10">
+                    <ul class="fullpage__nav nav navbar-nav pull-right">
+                        <li><a href="index.html">Cover</a></li>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="member.html">Members</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIDEBAR
+    ============================== -->
+    <!-- Sidebar button open -->
+    <div class="sidebar__btn sidebar__btn_open show">
+        <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Open menu" aria-hidden="true"></span>
+        <span class="fa fa-arrow-circle-right fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
+    </div>
+
+    <!-- Sidebar menu -->
+    <div class="sidebar__menu scrollspy_menu sidebar__menu_hidden">
+
+        <!-- Sidebar button close -->
+        <div class="sidebar__btn sidebar__btn_close show">
+            <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Close menu" aria-hidden="true"></span>
+            <span class="fa fa-arrow-circle-left fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Close menu" aria-hidden="true"></span>
+        </div>
+
+        <!-- Sidebar brand name -->
+        <div class="sidebar-menu__brand"></div>
+        <!-- Sidebar links -->
+        <ul class="sidebar-menu__ul nav">
+            <li><a href="../profile/index.html">Profile</a></li>
+            <li><a href="../people/index.html">People</a></li>
+            <li><a href="../teams/index.html">Teams</a></li>
+            <li><a href="../startups/index.html">Startups</a></li>
+            <li><a href="../jobs/index.html">Jobs</a></li>
+            <li><a href="../communities/index.html">Communities</a></li>
+            <li><a href="../collections/index.html">Collections</a></li>
+            <li><a href="../events/index.html">Events</a></li>
+            <li class="divider"></li>
+            <li><a href="../settings/index.html">Settings</a></li>
+            <li><a href="../help/index.html">Help</a></li>
+            <li><a href="../index.html">Logout</a></li>
+        </ul>
+
+    </div> <!-- / .sidebar-menu__ul -->
+
+    <div class="container main">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <ul class="nav nav-tabs">
+                        <li><a href="index.html">Sign Up</a></li>
+                        <li class="active"><a href="login.html">Login</a></li>
+                    </ul>
+                    <div class="white row-border clearfix">
+                        <div class="content content-no-header">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                            <input id="password" type="password" class="validate">
+                                            <label for="password">Password</label>
+                                        </div>
+                                        <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                                        <label for="filled-in-box">Remember me next time</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="waves-effect waves-light btn-large btn-margin">
+                                    <span class="fa fa-user-circle fa-lg"></span>
+                                    <span>Login</span>
+                                </button>
+                                <div class="login-links">
+                                    <p><a href="index.html">Forgot password?</a></p>
+                                    <p><a href="index.html">Don't have an account?</a></p>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="pull-right">
+                                    <button class="waves-effect waves-light btn-flat">
+                                        <span class="fa fa-linkedin fa-lg" title="Linkedin"></span>
+                                        <span>Linkedin</span>
+                                    </button>
+                                    <button class="waves-effect waves-light btn-flat">
+                                        <span class="fa fa-github fa-lg" title="Github"></span>
+                                        <span>Github</span>
+                                    </button>
+                                    <button class="waves-effect waves-light btn-flat">
+                                        <span class="fa fa-google-plus fa-lg" title="Google+"></span>
+                                        <span>Google+</span>
+                                    </button>
+                                    <button class="waves-effect waves-light btn-flat">
+                                        <span class="fa fa-twitter fa-lg" title="Twitter"></span>
+                                        <span>Twitter</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#">Features</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Feed</a></li>
+                        <li><a href="#">Timeline</a></li>
+                    </ul>
+                    <div class="white row-border cover">
+                        <div class="slider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="../img/cover/1.jpg">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text left-align">
+                                            <h3>Kick Up Startup!</h3>
+                                            <h5>A community based Startup Foundry</h5>
+                                            <p>The right place for founders and developers. Support стартапов на любом этапе развития. Startups geared toward new technology can find fertile ground and a supportive business community here.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../img/cover/2.jpg">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text left-align">
+                                            <h3>Second slide label</h3>
+                                            <h5>A community based Startup Foundry</h5>
+                                            <p>Помогаем быстро протестировать свою идею</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../img/cover/3.jpg">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text left-align">
+                                            <h3>Right Aligned Caption</h3>
+                                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-action-btn">
+        <a href="#modal" class="btn-floating btn-large waves-effect waves-light">
+            <span class="fa fa-plus fa-lg"></span>
+        </a>
+    </div>
+    <div id="modal" class="modal bottom-sheet ">
+        <div class="modal-content">
+            <ul class="nav nav-tabs">
+                <li><a href="index.html">Sign Up</a></li>
+                <li class="active"><a href="login.html">Login</a></li>
+            </ul>
+            <div class="white row-border clearfix">
+                <div class="content content-no-header">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                                <label for="filled-in-box">Remember me next time</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="waves-effect waves-light btn-large btn-margin">
+                            <span class="fa fa-user-circle fa-lg"></span>
+                            <span>Login</span>
+                        </button>
+                        <div class="login-links">
+                            <p><a href="index.html">Forgot password?</a></p>
+                            <p><a href="index.html">Don't have an account?</a></p>
+                        </div>
+                    </div>
+                    <div class="card-footer clearfix">
+                        <div class="pull-right">
+                            <button class="waves-effect waves-light btn-flat">
+                                <span class="fa fa-linkedin fa-lg" title="Linkedin"></span>
+                                <span>Linkedin</span>
+                            </button>
+                            <button class="waves-effect waves-light btn-flat">
+                                <span class="fa fa-github fa-lg" title="Github"></span>
+                                <span>Github</span>
+                            </button>
+                            <button class="waves-effect waves-light btn-flat">
+                                <span class="fa fa-google-plus fa-lg" title="Google+"></span>
+                                <span>Google+</span>
+                            </button>
+                            <button class="waves-effect waves-light btn-flat">
+                                <span class="fa fa-twitter fa-lg" title="Twitter"></span>
+                                <span>Twitter</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slider({ full_width: true });
+        });
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
+</body>
+</html>

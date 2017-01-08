@@ -8,27 +8,23 @@
     <meta name="description" content="Kick Up Your Startup!">
     <meta name="author" content="">
     <title>Kick Up Startup</title>
-    <link href="../css/lightbox.css" rel="stylesheet">
+    <link href="../css/materialize.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body class="classic page">
-    <!-- PRELOADER
-    ============================== -->
-    <div class="preloader active" style="display: none;">
-        <img src="../img/loading.gif" alt="Loading..." class="preloader__img" style="display: none;">
-    </div>
+<body class="page">
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
+                    <ul class="fullpage__nav nav navbar-nav pull-left"></ul>
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li><a href="cover.html">Cover</a></li>
-                        <li class="active"><a href="#">Overview</a></li>
-                        <li><a href="member.html">Member</a></li>
+                        <li class="active"><a href="#">Cover</a></li>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="member.html">Members</a></li>
                         <li><a href="collections.html">Collections</a></li>
                     </ul>
                 </div>
@@ -39,13 +35,13 @@
     <!-- SIDEBAR
     ============================== -->
     <!-- Sidebar button open -->
-    <div class="sidebar__btn sidebar__btn_open hidden">
+    <div class="sidebar__btn sidebar__btn_open show">
         <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Open menu" aria-hidden="true"></span>
         <span class="fa fa-arrow-circle-right fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
     </div>
 
     <!-- Sidebar menu -->
-    <div class="sidebar__menu scrollspy_menu">
+    <div class="sidebar__menu scrollspy_menu sidebar__menu_hidden">
 
         <!-- Sidebar button close -->
         <div class="sidebar__btn sidebar__btn_close show">
@@ -60,7 +56,7 @@
             <li><a href="../profile/index.html">Profile</a></li>
             <li><a href="../people/index.html">People</a></li>
             <li><a href="../teams/index.html">Teams</a></li>
-            <li class="active"><a href="../startups/index.html">Startups</a></li>
+            <li><a href="../startups/index.html">Startups</a></li>
             <li><a href="../jobs/index.html">Jobs</a></li>
             <li><a href="../communities/index.html">Communities</a></li>
             <li><a href="../collections/index.html">Collections</a></li>
@@ -77,201 +73,114 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="row">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="index.html">Sign Up</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
                     <div class="white row-border clearfix">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="content">
-                                <h3>Sign Up</h3>
-                                <p>Suspendisse vel augue non tortor sodales porta id eu odio.</p>
-                                <div class="col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-link btn-xl btn-page">
-                                        <span class="fa fa-thumbs-up fa-lg" aria-hidden="true"></span>
-                                        <span>Submit</span>
+                        <div class="content content-no-header">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                            <input id="password" type="password" class="validate">
+                                            <label for="password">Password</label>
+                                        </div>
+                                        <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="waves-effect waves-light btn-large btn-margin">
+                                    <span class="fa fa-thumbs-up fa-lg"></span>
+                                    <span>Welcome aboard!</span>
+                                </button>
+                                <div class="login-links">
+                                    <p><a href="login.html">Already have an account?</a></p>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="pull-right">
+                                    <button class="waves-effect waves-light btn-flat">
+                                        <span class="fa fa-linkedin fa-lg" title="Linkedin"></span>
+                                        <span>Linkedin</span>
+                                    </button>
+                                    <button class="waves-effect waves-light btn-flat">
+                                        <span class="fa fa-github fa-lg" title="Github"></span>
+                                        <span>Github</span>
+                                    </button>
+                                    <button class="waves-effect waves-light btn-flat">
+                                        <span class="fa fa-google-plus fa-lg" title="Google+"></span>
+                                        <span>Google+</span>
+                                    </button>
+                                    <button class="waves-effect waves-light btn-flat">
+                                        <span class="fa fa-twitter fa-lg" title="Google+"></span>
+                                        <span>Twitter</span>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="content">
-                                <div class="">
-                                    <h3>Login</h3>
-                                    <p>Suspendisse vel augue non tortor sodales porta id eu odio.</p>
-                                    <div class="col-sm-12 text-center">
-                                        <button type="submit" class="btn btn-link btn-xl btn-page">
-                                            <span class="fa fa-thumbs-up fa-lg" aria-hidden="true"></span>
-                                            <span>Submit</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="white row-border clearfix">
-                        <div class="content text-center">
-                            <div class="banner" style="background: url(../img/banner-ks.jpg) center center no-repeat"></div>
-                            <div class="avatar"><img src="../img/logo.jpg" /></div>
-                            <h3><ul class="stat"><li>Kick Up Startup</li></ul></h3>
-                            <h4>A community based Startup Foundry</h4>
-                            <ul class="stat"><li>Prague, Czech Republic</li></ul>
-                            <ul class="stat"><li>1,508 Followers</li><li>8 Members</li><li>184 Posts</li></ul>
-                        </div>
-                        <p>Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                        <div class="card-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-star fa-lg" title="Following"></span>
-                                    <span>Follow</span>
-                                </a>
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-user-plus fa-lg" title="Hire"></span>
-                                    <span>2 Vacancies</span>
-                                </a>
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-share-alt fa-lg" title="Share"></span>
-                                    <span>Share</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     <ul class="nav nav-tabs">
-                      <li class="active"><a href="#">Details</a></li>
-                      <li><a href="startups/development.html">Development</a></li>
-                      <li><a href="startups/reports.html">Reports</a></li>
-                      <li><a href="startups/promotion.html">Promotion</a></li>
+                        <li role="presentation" class="active"><a href="#">Features</a></li>
+                        <li role="presentation"><a href="#">Offers</a></li>
+                        <li role="presentation"><a href="#">Feed</a></li>
+                        <li role="presentation"><a href="#">Timeline</a></li>
                     </ul>
-                    <div class="white row-border">
-                        <div class="content">
-                            <h3>Text</h3>
-                            <p>Suspendisse vel augue non tortor sodales porta id eu odio. Aliquam erat volutpat. Vivamus id quam suscipit, consectetur enim imperdiet, tristique enim. Nam vulputate at dui id consequat. <a href="#">link</a> Mauris ut ligula eros. Vivamus vulputate, lacus non porta blandit, ex turpis ultrices justo, sit amet faucibus tortor augue id nulla. Curabitur nec interdum tellus, interdum feugiat ante. Proin quis quam tincidunt, porta velit posuere, gravida est. Nulla sit amet tempus justo, quis commodo massa.</p>
+                    <div class="white row-border cover">
+                        <div class="slider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="../img/cover/1.jpg">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text left-align">
+                                            <h3>Kick Up Startup!</h3>
+                                            <h5>A community based Startup Foundry</h5>
+                                            <p>The right place for founders and developers. Support стартапов на любом этапе развития. Startups geared toward new technology can find fertile ground and a supportive business community here.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../img/cover/2.jpg">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text left-align">
+                                            <h3>Second slide label</h3>
+                                            <h5>A community based Startup Foundry</h5>
+                                            <p>Помогаем быстро протестировать свою идею</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../img/cover/3.jpg">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text left-align">
+                                            <h3>Right Aligned Caption</h3>
+                                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="white row-border">
-                        <div class="content">
-                            <h3>Rules</h3>
-                            <p>Mauris ut ligula eros. Vivamus vulputate, lacus non porta blandit, ex turpis ultrices justo, sit amet faucibus tortor augue id nulla. Curabitur nec interdum tellus, interdum feugiat ante. Proin quis quam tincidunt, porta velit posuere, gravida est. Nulla sit amet tempus justo, quis commodo massa.</p>
-                        </div>
-                    </div>
-                    <div class="white row-border pointer" data-toggle="modal" data-target="#basicModal">
-                        <div class="content text-center">
-                            <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
-                            <div class="avatar"><img src="../img/no-photo.png" /></div>
-                            <h3><ul class="stat"><li>User cases</li></ul></h3>
-                            <ul class="stat"><li>4 Iterations</li><li>70 Comments</li></ul>
-                        </div>
-                        <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                        <div class="card-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-pencil fa-lg" title="Share"></span>
-                                    <span>Write</span>
-                                </a>
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-child fa-lg" title="Public"></span>
-                                    <span>Public</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="white row-border pointer" data-toggle="modal" data-target="#basicModal">
-                        <div class="content text-center">
-                            <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
-                            <div class="avatar"><img src="../img/no-photo.png" /></div>
-                            <h3><ul class="stat"><li>Planning</li></ul></h3>
-                            <ul class="stat"><li>2 Iterations</li></ul>
-                        </div>
-                        <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                        <div class="card-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-pencil fa-lg" title="Share"></span>
-                                    <span>Write</span>
-                                </a>
-                                <a href="#" class="btn ticket-btn">
-                                    <span class="fa fa-child fa-lg" title="Public"></span>
-                                    <span>Public</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                      <div class="white row-border end clearfix">
-                        <div class="text-center">
-                            <h4>You have reached the end</h4>
-                        </div>
-                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title" id="myModalLabel">User cases</h4>
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title" id="myModalLabel"></h4>
-            <ul class="post_list">
-                <li><a role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapseExample">User case or iteration 1. Proin quis quam tincidunt, porta velit posuere</a>
-                <div class="collapse in" id="collapse1">
-                  <div class="panel-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                  </div>
-                </div>
-                </li>
-                <li><a role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseExample">User case or iteration 2. Mauris ac purus vitae mi fringilla</a>
-                <div class="collapse" id="collapse2">
-                  <div class="panel-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                </div>
-                </li>
-                <li><a role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapseExample">User case or iteration 3. Cras euismod nec diam</a>
-                <div class="collapse" id="collapse3">
-                  <div class="panel-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                </div>
-                </li>
-                <li><a role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapseExample">User case or iteration 4. Ultricies et</a>
-                <div class="collapse" id="collapse4">
-                  <div class="panel-body">
-                    <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                    <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                  </div>
-                </div>
-                </li>
-            </ul>
-            <div class="btn-main text-center clearfix">
-                <a href="#" class="btn btn-xl btn-page" data-toggle="modal" data-target="#basicModal">
-                    <span class="fa fa-check-circle fa-lg" aria-hidden="true"></span>
-                    <span>Add Section</span>
-                </a>
-            </div>
-            <a class="twitter-timeline" style="width:600px" href="https://twitter.com/search?q=kickupstartup.com" data-widget-id="570802230606176256">Tweets about kickupstartup.com</a>
-            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script src="../js/jquery.js"></script>
+    <script src="../js/custom.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slider({ full_width: true });
+        });
+    </script>
 </body>
 </html>
