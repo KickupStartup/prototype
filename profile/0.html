@@ -8,17 +8,12 @@
     <meta name="description" content="Kick Up Your Startup!">
     <meta name="author" content="">
     <title>Kick Up Startup</title>
-    <link href="../css/lightbox.css" rel="stylesheet">
+    <link href="../css/materialize.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body class="page">
-    <!-- PRELOADER
-    ============================== -->
-    <div class="preloader active" style="display: none;">
-        <img src="../img/loading.gif" alt="Loading..." class="preloader__img" style="display: none;">
-    </div>
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="row">
@@ -42,13 +37,13 @@
     <!-- SIDEBAR
     ============================== -->
     <!-- Sidebar button open -->
-    <div class="sidebar__btn sidebar__btn_open hidden">
+    <div class="sidebar__btn sidebar__btn_open show">
         <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Open menu" aria-hidden="true"></span>
         <span class="fa fa-arrow-circle-right fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
     </div>
 
     <!-- Sidebar menu -->
-    <div class="sidebar__menu scrollspy_menu">
+    <div class="sidebar__menu scrollspy_menu sidebar__menu_hidden">
 
         <!-- Sidebar button close -->
         <div class="sidebar__btn sidebar__btn_close show">
@@ -83,9 +78,11 @@
                     <div class="white row-border">
                         <div class="content clearfix">
                             <h3>We're ready to start</h3>
-                            <p>Ваш профайл — это ваше лицо в сообществе Kick Up Startup. Мы последовательно заполним разделы, и по мере продвижения вам будут открываться все новые возможности платформы.
-                            <br>
-                            Первым шагом станет заполнение basic information.</p>
+                            <p>
+                                Ваш профайл — это ваше лицо в сообществе Kick Up Startup. Мы последовательно заполним разделы, и по мере продвижения вам будут открываться все новые возможности платформы.
+                                <br>
+                                Первым шагом станет заполнение basic information.
+                            </p>
                             <div class="col-sm-12 text-center">
                                 <a href="1.html" class="btn btn-xl btn-page">
                                     <span class="fa fa-check-circle fa-lg" aria-hidden="true"></span>
@@ -98,8 +95,53 @@
             </div>
         </div>
     </div>
+    <div class="fixed-action-btn">
+        <a data-target="modal" class="btn-floating btn-large waves-effect waves-light">
+            <span class="fa fa-plus fa-lg"></span>
+        </a>
+    </div>
+    <div id="modal" class="modal bottom-sheet">
+        <div class="modal-content">
+            <a href="#" class="default pull-right"><span class="fa fa-remove fa-lg"></span></a>
+            <h3>Create</h3>
+            <div class="content modal-create">
+                <ul class="collection">
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-rocket fa-lg material-icons circle"></i>
+                        <span class="title">Awesome Startup</span>
+                        <p>
+                            First Line
+                        </p>
+                    </li>
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-users fa-lg material-icons circle"></i>
+                        <span class="title">A-Team</span>
+                        <p>
+                            First Line
+                        </p>
+                    </li>
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-archive fa-lg material-icons circle"></i>
+                        <span class="title">Amazing Collection</span>
+                        <p>
+                            First Line
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+            $('#modal').modal('open');
+        });
+    </script>
+
 </body>
 </html>

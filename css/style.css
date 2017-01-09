@@ -3882,3 +3882,11 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .content-form{margin:20px 12px 12px}
 .default{color:#555}
     .default:hover{color:#039be5}
+
+/* material update */
+.collection .collection-item:hover{background-color:#f9f9f9;cursor:pointer}
+.collection .collection-item.avatar i.circle{background-color:#039be5}
+.modal-create{padding:0!important}
+    .modal-create .collection{margin:0}
+.modal .white,.modal .content{margin-top:24px}
+/* material update END */
