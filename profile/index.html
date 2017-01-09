@@ -8,36 +8,31 @@
     <meta name="description" content="Kick Up Your Startup!">
     <meta name="author" content="">
     <title>Kick Up Startup</title>
-    <link href="../css/lightbox.css" rel="stylesheet">
+    <link href="../css/materialize.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body class="page">
-    <!-- PRELOADER
-    ============================== -->
-    <div class="preloader active" style="display: none;">
-        <img src="../img/loading.gif" alt="Loading..." class="preloader__img" style="display: none;">
-    </div>
+
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-2">
-                    <ul class="nav navbar-nav pull-left">
-                        <li><a href="#" class="avatar-small"><img src="../img/notifications.png" /><sup class="badge">1</sup></a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-10">
-                    <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li><a href="cover.html">Cover</a></li>
-                        <li class="active"><a href="#">Overview</a></li>
-                        <li><a href="member.html">Member</a></li>
-                        <li><a href="collections.html">Collections</a></li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="nav navbar-nav pull-left">
+                <li><a href="#" class="avatar-small"><img src="../img/notifications.png" /><sup class="badge">1</sup></a></li>
+            </ul>
+            <ul class="fullpage__nav nav navbar-nav pull-right">
+                <li><a href="cover.html">Cover</a></li>
+                <li class="active"><a href="index.html">Overview</a></li>
+                <li><a href="member.html">Member</a></li>
+                <li><a href="collections.html">Collections</a></li>
+            </ul>
         </div>
     </div>
+    <ul id="slide-out" class="side-nav">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
+
 
     <!-- SIDEBAR
     ============================== -->
@@ -89,18 +84,20 @@
                             <ul class="stat"><li><span class="editable" contenteditable="true">London, United Kingdom</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
                             <p class="editable" contenteditable="true">Java, Java Script, HTML5, CSS</p>
                         </div>
-                        <p class="editable" contenteditable="true">Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
+                        <div class="content clearfix">
+                            <p class="editable" contenteditable="true">Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
+                        </div>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-envelope fa-lg" title="Messages"></span><sup class="badge">2</sup>
                                     <span>Messages</span>
                                 </a>
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-pencil fa-lg" title="Edit"></span>
                                     <span>Edit</span>
                                 </a>
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-share-alt fa-lg" title="Share"></span>
                                     <span>Share</span>
                                 </a>
@@ -108,10 +105,10 @@
                         </div>
                     </div>
                     <ul class="nav nav-tabs">
-                      <li class="active"><a href="#">Details</a></li>
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="promotion.html">Promotion</a></li>
-                      <li><a href="followers.html">Followers</a></li>
+                        <li class="active"><a href="#">Details</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="promotion.html">Promotion</a></li>
+                        <li><a href="followers.html">Followers</a></li>
                     </ul>
                     <div class="white row-border">
                         <div class="content">
@@ -126,11 +123,11 @@
                         </div>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-pencil fa-lg" title="Edit"></span>
                                     <span>Edit</span>
                                 </a>
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-child fa-lg" title="Public"></span>
                                     <span>Public</span>
                                 </a>
@@ -144,11 +141,11 @@
                         </div>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-pencil fa-lg" title="Edit"></span>
                                     <span>Edit</span>
                                 </a>
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-child fa-lg" title="Public"></span>
                                     <span>Public</span>
                                 </a>
@@ -162,11 +159,11 @@
                         </div>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-pencil fa-lg" title="Edit"></span>
                                     <span>Edit</span>
                                 </a>
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-child fa-lg" title="Public"></span>
                                     <span>Public</span>
                                 </a>
@@ -176,20 +173,21 @@
                     <div class="white row-border">
                         <div class="content">
                             <h3>Education</a></h3>
-                            <p class="editable" contenteditable="true">Massachusetts Institute of Technology
-                            <br>
-                            2012 - 2010
-                            <br>
-                            Master, Information synthesis, Predictive analytics, Text mining
+                            <p class="editable" contenteditable="true">
+                                Massachusetts Institute of Technology
+                                <br>
+                                2012 - 2010
+                                <br>
+                                Master, Information synthesis, Predictive analytics, Text mining
                             </p>
                         </div>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-pencil fa-lg" title="Edit"></span>
                                     <span>Edit</span>
                                 </a>
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-child fa-lg" title="Public"></span>
                                     <span>Public</span>
                                 </a>
@@ -199,17 +197,18 @@
                     <div class="white row-border">
                         <div class="content">
                             <h3>Languages</a></h3>
-                            <p class="editable" contenteditable="true">English - Full professional proficiency
-                            <br>French - Elementary proficiency
+                            <p class="editable" contenteditable="true">
+                                English - Full professional proficiency
+                                <br>French - Elementary proficiency
                             </p>
                         </div>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-pencil fa-lg" title="Edit"></span>
                                     <span>Edit</span>
                                 </a>
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-child fa-lg" title="Public"></span>
                                     <span>Public</span>
                                 </a>
@@ -219,17 +218,19 @@
                     <div class="white row-border">
                         <div class="content">
                             <h3>Personal Information</a></h3>
-                            <p class="editable" contenteditable="true">Gender: male
-                            <br>
-                            Birth date: 1978</p>
+                            <p class="editable" contenteditable="true">
+                                Gender: male
+                                <br>
+                                Birth date: 1978
+                            </p>
                         </div>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-pencil fa-lg" title="Edit"></span>
                                     <span>Edit</span>
                                 </a>
-                                <a href="#" class="btn ticket-btn">
+                                <a href="#" class="ticket-btn">
                                     <span class="fa fa-lock fa-lg" title="Private"></span>
                                     <span>Private</span>
                                 </a>
@@ -245,8 +246,26 @@
             </div>
         </div>
     </div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large">
+            <span class="fa fa-plus fa-lg"></span>
+        </a>
+        <ul>
+            <li><a class="tooltipped btn-floating" data-position="left" data-delay="50" data-tooltip="Create Startup"><span class="fa fa-rocket fa-lg"></span></a></li>
+            <li><a class="tooltipped btn-floating" data-position="left" data-delay="50" data-tooltip="Create Team"><span class="fa fa-users fa-lg"></span></a></li>
+            <li><a class="tooltipped btn-floating" data-position="left" data-delay="50" data-tooltip="Create Collection"><span class="fa fa-archive fa-lg"></span></a></li>
+            <li><a class="tooltipped btn-floating" data-position="left" data-delay="50" data-tooltip="Create Post"><span class="fa fa-pencil fa-lg"></span></a></li>
+        </ul>
+    </div>
     <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+        // Initialize collapse button
+        $(".button-collapse").sideNav();
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        //$('.collapsible').collapsible();</script>
 </body>
 </html>
