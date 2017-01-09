@@ -2031,7 +2031,7 @@ button.close {
   list-style: none;
   padding-left: 0;
   overflow: auto;
-  padding: 32px 0;
+  padding: 80px 0;
 }
 .sidebar-menu__ul > li > a {
   margin-left:10px;
@@ -2068,7 +2068,8 @@ html {
   height: 100% !important;
   /* Added !important to override smoothscroll.js height: auto; */
 }
-.main .white{background-color:#fff;margin:10px 0;padding:10px 40px}
+.main .white{background-color:#fff;padding:10px 40px}
+.main .white h4{color:#aaa;font-weight:normal}
 .main .white.cover{padding:10px}
 .main .content{padding-bottom: 40px}
   .page .content{padding-bottom:10px}
@@ -3019,7 +3020,7 @@ fieldset[disabled] a.btn {
   border-width: 0 0 1px;
 }
 @media (min-width: 768px) {
-  .page .main{padding-top:70px}
+  .page .main{padding-top:90px}
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3448,7 +3449,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     border-radius: 4px;
     padding: 0;
 }
-.content .fa{margin-right:6px}
+.fa{margin-right:6px}
 .stat > li {
     display: inline-block;
 }
@@ -3464,6 +3465,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: #494949;
     padding: 4px 8px;
 }
+.card-nexus{margin:0}
+.card-nexus-no-border{height:20px}
+.card-nexus-border{border-left:1px solid #eee;height:20px}
 .card-footer{margin:0 -40px -10px;padding:12px 20px 24px}
   .card-footer button{color:#555;padding:0 18px;text-transform:none}
     .card-footer button:hover{background-color:transparent;color:#0072dc}
@@ -3471,7 +3475,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .modal-content .card-footer{margin:auto}
 .ticket-btn{color:#555;padding:15px}
   .ticket-btn:hover,.ticket-btn.active{color:#0072dc;text-decoration:none}
-.nav-tabs{margin:11px 0 -11px}
+.nav-tabs{margin:0 0 -1px}
   .nav-tabs li > a{color:#555}
 .pointer{background:#fff;border:1px solid #f2f2f2;
     -webkit-transition: background-color .5s linear, border .5s ease;
@@ -3487,7 +3491,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
           transition: background-color .5s linear, border .5s ease}
 .editable{border-bottom:1px solid #f2f2f2}
 .editable{display:inline-block;padding:10px;margin:0 -10px}
-  .editable.avatar:hover img{box-shadow:0 0 0 2px #f2f2f2}
+  .editable.avatar-photo:hover img{box-shadow:0 0 0 2px #f2f2f2}
   .banner-edit{background:url(../img/edit-banner.png) no-repeat!important}
   .banner-edit:hover{box-shadow:0 0 0 2px #eee;cursor:pointer}
 .editable:focus{border-bottom:1px solid #0072dc;color:#111;outline:none}
@@ -3889,4 +3893,5 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .modal-create{padding:0!important}
     .modal-create .collection{margin:0}
 .modal .white,.modal .content{margin-top:24px}
+.modal h3{font-weight:normal}
 /* material update END */

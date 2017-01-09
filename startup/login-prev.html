@@ -18,15 +18,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
-                    <ul class="nav navbar-nav pull-left">
-                        <li><a href="#" class="avatar-small"><img src="../img/notifications.png" /><sup class="badge">1</sup></a></li>
-                    </ul>
+                    <ul class="fullpage__nav nav navbar-nav pull-left"></ul>
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
                         <li class="active"><a href="index.html">Cover</a></li>
                         <li><a href="overview.html">Overview</a></li>
-                        <li><a href="member.html">Member</a></li>
+                        <li><a href="member.html">Members</a></li>
                         <li><a href="collections.html">Collections</a></li>
                     </ul>
                 </div>
@@ -74,22 +72,57 @@
     <div class="container main">
         <div class="row">
             <div class="col-xs-12">
-                <div class="white row-border">
-                    <div class="content text-center clearfix">
-                        <div class="banner" style="background: url(../img/banner-avatar.jpg) center center no-repeat"></div>
-                        <div class="avatar-photo"><img src="../img/avatar.jpg" /></div>
-                        <h3><ul class="stat"><li><span class="editable" contenteditable="true">John Smith</span></li><li>$<span class="editable" contenteditable="true">20</span> / hr</li></ul></h3>
-                        <h4 class="editable" contenteditable="true">Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
-                        <ul class="stat"><li><span class="editable" contenteditable="true">London, United Kingdom</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
-                        <p class="editable" contenteditable="true">Java, Java Script, HTML5, CSS</p>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="index.html">Sign Up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <div class="white row-border clearfix">
+                    <div class="content content-no-header">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="input-field">
+                                        <input id="password" type="password" class="validate">
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" class="waves-effect waves-light btn-large btn-margin">
+                                <span class="fa fa-thumbs-up fa-lg"></span>
+                                <span>Welcome aboard!</span>
+                            </button>
+                            <div class="login-links">
+                                <p><a href="login.html">Already have an account?</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="editable" contenteditable="true">Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
                     <div class="card-footer clearfix">
                         <div class="pull-right">
-                            <a href="#" class="ticket-btn">
-                                <span class="fa fa-share-alt fa-lg" title="Share"></span>
-                                <span>Share</span>
-                            </a>
+                            <button class="waves-effect waves-light btn-flat">
+                                <span class="fa fa-linkedin fa-lg" title="Linkedin"></span>
+                                <span>Linkedin</span>
+                            </button>
+                            <button class="waves-effect waves-light btn-flat">
+                                <span class="fa fa-github fa-lg" title="Github"></span>
+                                <span>Github</span>
+                            </button>
+                            <button class="waves-effect waves-light btn-flat">
+                                <span class="fa fa-google-plus fa-lg" title="Google+"></span>
+                                <span>Google+</span>
+                            </button>
+                            <button class="waves-effect waves-light btn-flat">
+                                <span class="fa fa-twitter fa-lg" title="Google+"></span>
+                                <span>Twitter</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -100,10 +133,10 @@
                     </div>
                 </div>
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Features</a></li>
-                    <li><a href="#">Offers</a></li>
-                    <li><a href="#">Feed</a></li>
-                    <li><a href="#">Timeline</a></li>
+                    <li role="presentation" class="active"><a href="#">Features</a></li>
+                    <li role="presentation"><a href="#">Offers</a></li>
+                    <li role="presentation"><a href="#">Feed</a></li>
+                    <li role="presentation"><a href="#">Timeline</a></li>
                 </ul>
                 <div class="white row-border cover">
                     <div class="slider">
@@ -140,69 +173,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-no-border col s1"></div>
-                    </div>
-                </div>
-                <div class="white row-border end clearfix">
-                    <div class="text-center">
-                        <h4>You have reached the end</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="fixed-action-btn">
-        <a data-target="modal" class="btn-floating btn-large waves-effect waves-light">
-            <span class="fa fa-plus fa-lg"></span>
-        </a>
-    </div>
-    <div id="modal" class="modal bottom-sheet">
-        <div class="modal-content">
-            <a href="#" class="default pull-right"><span class="fa fa-remove fa-lg"></span></a>
-            <h3>Create</h3>
-            <div class="content modal-create">
-                <ul class="collection">
-                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
-                        <i class="fa fa-rocket fa-lg material-icons circle"></i>
-                        <span class="title">Awesome Startup</span>
-                        <p>
-                            Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Nulla facilisi. Ut fringilla. Suspendisse potenti.
-                        </p>
-                    </li>
-                </ul>
-                <div class="col-sm-12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-no-border col s1"></div>
-                    </div>
-                </div>
-                <ul class="collection">
-                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
-                        <i class="fa fa-users fa-lg material-icons circle"></i>
-                        <span class="title">A-Team</span>
-                        <p>
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis.
-                        </p>
-                    </li>
-                </ul>
-                <div class="col-sm-12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-no-border col s1"></div>
-                    </div>
-                </div>
-                <ul class="collection">
-                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
-                        <i class="fa fa-archive fa-lg material-icons circle"></i>
-                        <span class="title">Amazing Collection</span>
-                        <p>
-                            Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.
-                        </p>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
@@ -213,7 +183,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('.modal').modal();
+            $('.slider').slider({ full_width: true });
         });
     </script>
 </body>

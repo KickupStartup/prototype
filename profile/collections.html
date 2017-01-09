@@ -8,29 +8,24 @@
     <meta name="description" content="Kick Up Your Startup!">
     <meta name="author" content="">
     <title>Kick Up Startup</title>
-    <link href="../css/lightbox.css" rel="stylesheet">
+    <link href="../css/materialize.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body class="page">
-    <!-- PRELOADER
-    ============================== -->
-    <div class="preloader active" style="display: none;">
-        <img src="../img/loading.gif" alt="Loading..." class="preloader__img" style="display: none;">
-    </div>
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
                     <ul class="nav navbar-nav pull-left">
-                        <li><a href="#" class="avatar-small"><img src="../img/notifications.png" /><sup class="badge">1</sup></a></li>
+                        <li><a href="#" class="avatar-small"><img src="../img/no-notifications.png" /></a></li>
                     </ul>
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li><a href="cover.html">Cover</a></li>
-                        <li><a href="index.html">Overview</a></li>
+                        <li><a href="index.html">Cover</a></li>
+                        <li><a href="overview.html">Overview</a></li>
                         <li><a href="member.html">Member</a></li>
                         <li class="active"><a href="collections.html">Collections</a></li>
                     </ul>
@@ -42,13 +37,13 @@
     <!-- SIDEBAR
     ============================== -->
     <!-- Sidebar button open -->
-    <div class="sidebar__btn sidebar__btn_open hidden">
+    <div class="sidebar__btn sidebar__btn_open show">
         <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Open menu" aria-hidden="true"></span>
         <span class="fa fa-arrow-circle-right fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
     </div>
 
     <!-- Sidebar menu -->
-    <div class="sidebar__menu scrollspy_menu">
+    <div class="sidebar__menu scrollspy_menu sidebar__menu_hidden">
 
         <!-- Sidebar button close -->
         <div class="sidebar__btn sidebar__btn_close show">
@@ -60,7 +55,7 @@
         <div class="sidebar-menu__brand"></div>
         <!-- Sidebar links -->
         <ul class="sidebar-menu__ul nav">
-            <li class="active"><a href="../profile/index.html">Profile</a></li>
+            <li><a href="../profile/index.html">Profile</a></li>
             <li><a href="../people/index.html">People</a></li>
             <li><a href="../teams/index.html">Teams</a></li>
             <li><a href="../startups/index.html">Startups</a></li>
@@ -79,120 +74,107 @@
     <div class="container main">
         <div class="row">
             <div class="col-xs-12">
-                <div class="row">
-                    <div class="white row-border">
-                        <div class="content text-center clearfix">
-                            <div class="banner" style="background: url(../img/banner-avatar.jpg) center center no-repeat"></div>
-                            <div class="avatar-photo"><img src="../img/avatar.jpg" /></div>
-                            <h3><ul class="stat"><li><span class="editable" contenteditable="true">John Smith</span></li><li>$<span class="editable" contenteditable="true">20</span> / hr</li></ul></h3>
-                            <h4 class="editable" contenteditable="true">Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
-                            <ul class="stat"><li><span class="editable" contenteditable="true">London, United Kingdom</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
-                            <p class="editable" contenteditable="true">Java, Java Script, HTML5, CSS</p>
-                        </div>
+                <div class="white row-border">
+                    <div class="content text-center clearfix">
+                        <div class="banner" style="background: url(../img/banner-avatar.jpg) center center no-repeat"></div>
+                        <div class="avatar-photo"><img src="../img/avatar.jpg" /></div>
+                        <h3><ul class="stat"><li><span class="editable" contenteditable="true">John Smith</span></li><li>$<span class="editable" contenteditable="true">20</span> / hr</li></ul></h3>
+                        <h4 class="editable" contenteditable="true">Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
+                        <ul class="stat"><li><span class="editable" contenteditable="true">London, United Kingdom</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
+                        <p class="editable" contenteditable="true">Java, Java Script, HTML5, CSS</p>
+                    </div>
+                    <div class="content clearfix">
                         <p class="editable" contenteditable="true">Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                        <div class="card-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-share-alt fa-lg" title="Share"></span>
-                                    <span>Share</span>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="card-footer clearfix">
+                        <div class="pull-right">
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-envelope fa-lg" title="Messages"></span>
+                                <span>Messages</span>
+                            </a>
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-share-alt fa-lg" title="Share"></span>
+                                <span>Share</span>
+                            </a>
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-child fa-lg" title="Share"></span>
+                                <span>Public</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="btn-main text-center clearfix">
-                        <a href="#" class="btn btn-xl btn-page" data-toggle="modal" data-target="#basicModal">
-                            <span class="fa fa-check-circle fa-lg" aria-hidden="true"></span>
-                            <span>Create</span>
-                        </a>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="waves-effect waves-light btn-large btn-margin">
+                        <span class="fa fa-check-circle fa-lg"></span>
+                        <span>Create</span>
+                    </a>
+                </div>
+                <div class="white row-border pointer clearfix" onclick="window.location = '../collections/collection.html';">
+                    <div class="content text-center">
+                        <div class="banner" style="background: url(../img/blog-banner.jpg) center center no-repeat"></div>
+                        <div class="avatar-photo"><img src="../img/avatar.jpg" /></div>
+                        <h3><ul class="stat"><li>Blog</li></ul></h3>
+                        <ul class="stat"><li>217 Followers</li><li>19 Posts</li></ul>
                     </div>
-                    <div class="white row-border pointer clearfix" onclick="window.location = '../collections/collection.html';">
-                        <div class="content text-center">
-                            <div class="banner" style="background: url(../img/blog-banner.jpg) center center no-repeat"></div>
-                            <div class="avatar-photo"><img src="../img/avatar.jpg" /></div>
-                            <h3><ul class="stat"><li>Blog</li></ul></h3>
-                            <ul class="stat"><li>217 Followers</li><li>19 Posts</li></ul>
-                        </div>
-                        <p>Мой блог. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et.</p>
-                        <div class="card-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-pencil fa-lg" title="Share"></span>
-                                    <span>Write</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-star fa-lg" title="Share"></span>
-                                    <span>Follow</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-share-alt fa-lg" title="Share"></span>
-                                    <span>Share</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-child fa-lg" title="Public"></span>
-                                    <span>Public</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="white row-border pointer clearfix" onclick="window.location = '../collections/collection.html';">
-                        <div class="content text-center">
-                            <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
-                            <div class="avatar-photo"><img src="../img/no-photo.png" /></div>
-                            <h3><ul class="stat"><li>Blog</li></ul></h3>
-                            <h4>My awesome blog :-)</h4>
-                            <ul class="stat"><li>87 Followers</li><li>4 Posts</li></ul>
-                        </div>
-                        <p>Здесь я храню список профайлов и стартапов.</p>
-                        <div class="card-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-pencil fa-lg" title="Share"></span>
-                                    <span>Write</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-lock fa-lg" title="Private"></span>
-                                    <span>Private</span>
-                                </a>
-                            </div>
+                    <p>Мой блог. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et.</p>
+                    <div class="card-footer clearfix">
+                        <div class="pull-right">
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-pencil fa-lg" title="Share"></span>
+                                <span>Write</span>
+                            </a>
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-star fa-lg" title="Share"></span>
+                                <span>Follow</span>
+                            </a>
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-share-alt fa-lg" title="Share"></span>
+                                <span>Share</span>
+                            </a>
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-child fa-lg" title="Public"></span>
+                                <span>Public</span>
+                            </a>
                         </div>
                     </div>
-                      <div class="white row-border end clearfix">
-                        <div class="text-center">
-                            <h4>You have reached the end</h4>
+                </div>
+                <div class="col-sm-12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-no-border col s1"></div>
+                    </div>
+                </div>
+                <div class="white row-border pointer clearfix" onclick="window.location = '../collections/collection.html';">
+                    <div class="content text-center">
+                        <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
+                        <div class="avatar-photo"><img src="../img/no-photo.png" /></div>
+                        <h3><ul class="stat"><li>Blog</li></ul></h3>
+                        <h4>My awesome blog :-)</h4>
+                        <ul class="stat"><li>87 Followers</li><li>4 Posts</li></ul>
+                    </div>
+                    <p>Здесь я храню список профайлов и стартапов.</p>
+                    <div class="card-footer clearfix">
+                        <div class="pull-right">
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-pencil fa-lg" title="Share"></span>
+                                <span>Write</span>
+                            </a>
+                            <a href="#" class="ticket-btn">
+                                <span class="fa fa-lock fa-lg" title="Private"></span>
+                                <span>Private</span>
+                            </a>
                         </div>
-                     </div>
-                     <p>Старая версия с табами наверху.</p>
-                    <ul class="nav nav-tabs">
-                      <li><a href="#">Cover</a></li>
-                      <li class="active"><a href="#">Overview</a></li>
-                      <li><a href="startups/development.html">Posts</a></li>
-                      <li><a href="startups/reports.html">Followers</a></li>
-                      <li><a href="startups/promotion.html">Promotion</a></li>
-                    </ul>
-                    <div class="white row-border">
-                        <div class="content text-center">
-                            <div class="banner" style="background: url(../img/blog-banner.jpg) center center no-repeat"></div>
-                            <div class="avatar-photo"><img src="../img/avatar.jpg" /></div>
-                            <h3><ul class="stat"><li>Blog</li></ul></h3>
-                            <ul class="stat"><li>217 Followers</li><li>19 Posts</li></ul>
-                        </div>
-                        <p>Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et.</p>
-                        <div class="card-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-star fa-lg" title="Following"></span>
-                                    <span>Follow</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-share-alt fa-lg" title="Share"></span>
-                                    <span>Share</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-child fa-lg" title="Public"></span>
-                                    <span>Public</span>
-                                </a>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-no-border col s1"></div>
+                    </div>
+                </div>
+                <div class="white row-border end clearfix">
+                    <div class="text-center">
+                        <h4>You have reached the end</h4>
                     </div>
                 </div>
             </div>
@@ -200,25 +182,84 @@
     </div>
 
     <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title" id="myModalLabel">Untitled</h4>
-          </div>
-          <div class="modal-body">
-            <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="myModalLabel">Untitled</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+    <div class="fixed-action-btn">
+        <a data-target="modal" class="btn-floating btn-large waves-effect waves-light">
+            <span class="fa fa-plus fa-lg"></span>
+        </a>
+    </div>
+    <div id="modal" class="modal bottom-sheet">
+        <div class="modal-content">
+            <a href="#" class="default pull-right"><span class="fa fa-remove fa-lg"></span></a>
+            <h3>Create</h3>
+            <div class="content modal-create">
+                <ul class="collection">
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-rocket fa-lg material-icons circle"></i>
+                        <span class="title">Awesome Startup</span>
+                        <p>
+                            Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Nulla facilisi. Ut fringilla. Suspendisse potenti.
+                        </p>
+                    </li>
+                </ul>
+                <div class="col-sm-12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-no-border col s1"></div>
+                    </div>
+                </div>
+                <ul class="collection">
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-users fa-lg material-icons circle"></i>
+                        <span class="title">A-Team</span>
+                        <p>
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis.
+                        </p>
+                    </li>
+                </ul>
+                <div class="col-sm-12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-no-border col s1"></div>
+                    </div>
+                </div>
+                <ul class="collection">
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-archive fa-lg material-icons circle"></i>
+                        <span class="title">Amazing Collection</span>
+                        <p>
+                            Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
 </body>
 </html>

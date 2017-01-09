@@ -21,8 +21,8 @@
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li><a href="cover.html">Cover</a></li>
-                        <li class="active"><a href="#">Overview</a></li>
+                        <li><a href="index.html">Cover</a></li>
+                        <li class="active"><a href="overview.html">Overview</a></li>
                         <li><a href="member.html">Members</a></li>
                         <li><a href="collections.html">Collections</a></li>
                     </ul>
@@ -117,10 +117,10 @@
                         </div>
                     </div>
                     <ul class="nav nav-tabs">
-                      <li class="active"><a href="#">Details</a></li>
-                      <li><a href="startups/development.html">Development</a></li>
-                      <li><a href="startups/reports.html">Reports</a></li>
-                      <li><a href="startups/promotion.html">Promotion</a></li>
+                        <li class="active"><a href="#">Details</a></li>
+                        <li><a href="startups/development.html">Development</a></li>
+                        <li><a href="startups/reports.html">Reports</a></li>
+                        <li><a href="startups/promotion.html">Promotion</a></li>
                     </ul>
                     <div class="white row-border">
                         <div class="content">
@@ -164,9 +164,11 @@
                             <h3><ul class="stat"><li>User cases</li></ul></h3>
                             <ul class="stat"><li>31 Comments</li></ul>
                         </div>
-                        <p>Типы пользователей. Что за пользователь, какая у него проблема и как решается с помощью проекта. Get to know your target group. Have a look at what competitors have done in this area.
-Перечислить чекбоксы.
-Кейсы создаются в виде тикетов: описание пользователя, что нужно, как решается.</p>
+                        <p>
+                            Типы пользователей. Что за пользователь, какая у него проблема и как решается с помощью проекта. Get to know your target group. Have a look at what competitors have done in this area.
+                            Перечислить чекбоксы.
+                            Кейсы создаются в виде тикетов: описание пользователя, что нужно, как решается.
+                        </p>
                         <div class="card-footer clearfix">
                             <div class="pull-right">
                                 <a href="#" class="ticket-btn">
@@ -216,30 +218,82 @@
                             <p>Имея кейсы мы теперь можем создать необходимые страницы, которые и видны как результат этапа. Указать, что даже после завершения задачи, она может быть продолжена позже в случае необходимости изменений и новых фич.</p>
                         </div>
                     </div>
-                      <div class="white row-border end clearfix">
+                    <div class="col-sm-12 clearfix">
+                        <div class="row card-nexus">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-no-border col s1"></div>
+                        </div>
+                    </div>
+                    <div class="white row-border end clearfix">
                         <div class="text-center">
                             <h4>You have reached the end</h4>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="fixed-action-btn">
-        <a class="btn-floating btn-large">
+        <a data-target="modal" class="btn-floating btn-large waves-effect waves-light">
             <span class="fa fa-plus fa-lg"></span>
         </a>
-        <ul>
-            <li><a class="tooltipped btn-floating" data-position="left" data-delay="50" data-tooltip="Create Startup"><span class="fa fa-rocket fa-lg"></span></a></li>
-            <li><a class="tooltipped btn-floating" data-position="left" data-delay="50" data-tooltip="Create Team"><span class="fa fa-users fa-lg"></span></a></li>
-            <li><a class="tooltipped btn-floating" data-position="left" data-delay="50" data-tooltip="Create Collection"><span class="fa fa-archive fa-lg"></span></a></li>
-            <li><a class="tooltipped btn-floating" data-position="left" data-delay="50" data-tooltip="Create Post"><span class="fa fa-pencil fa-lg"></span></a></li>
-        </ul>
+    </div>
+    <div id="modal" class="modal bottom-sheet">
+        <div class="modal-content">
+            <a href="#" class="default pull-right"><span class="fa fa-remove fa-lg"></span></a>
+            <h3>Create</h3>
+            <div class="content modal-create">
+                <ul class="collection">
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-rocket fa-lg material-icons circle"></i>
+                        <span class="title">Awesome Startup</span>
+                        <p>
+                            Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Nulla facilisi. Ut fringilla. Suspendisse potenti.
+                        </p>
+                    </li>
+                </ul>
+                <div class="col-sm-12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-no-border col s1"></div>
+                    </div>
+                </div>
+                <ul class="collection">
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-users fa-lg material-icons circle"></i>
+                        <span class="title">A-Team</span>
+                        <p>
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis.
+                        </p>
+                    </li>
+                </ul>
+                <div class="col-sm-12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-no-border col s1"></div>
+                    </div>
+                </div>
+                <ul class="collection">
+                    <li class="collection-item avatar" onclick="window.location = '../startup/index.html';">
+                        <i class="fa fa-archive fa-lg material-icons circle"></i>
+                        <span class="title">Amazing Collection</span>
+                        <p>
+                            Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
 </body>
 </html>
