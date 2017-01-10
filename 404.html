@@ -8,9 +8,9 @@
     <meta name="description" content="Kick Up Your Startup!">
     <meta name="author" content="">
     <title>Kick Up Startup</title>
-    <link href="../css/materialize.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -18,12 +18,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
+                    <ul class="nav navbar-nav pull-left">
+                        <li><a href="#" class="avatar-small"><img src="img/notifications.png" /><sup class="badge">1</sup></a></li>
+                    </ul>
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage__nav nav navbar-nav pull-right">
-                        <li><a href="index.html">Cover</a></li>
-                        <li class="active"><a href="overview.html">Overview</a></li>
-                        <li><a href="member.html">Members</a></li>
+                        <li><a href="cover.html">Cover</a></li>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="member.html">Member</a></li>
                         <li><a href="collections.html">Collections</a></li>
                     </ul>
                 </div>
@@ -34,13 +37,13 @@
     <!-- SIDEBAR
     ============================== -->
     <!-- Sidebar button open -->
-    <div class="sidebar__btn sidebar__btn_open hidden">
+    <div class="sidebar__btn sidebar__btn_open show">
         <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Open menu" aria-hidden="true"></span>
         <span class="fa fa-arrow-circle-right fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
     </div>
 
     <!-- Sidebar menu -->
-    <div class="sidebar__menu scrollspy_menu">
+    <div class="sidebar__menu scrollspy_menu sidebar__menu_hidden">
 
         <!-- Sidebar button close -->
         <div class="sidebar__btn sidebar__btn_close show">
@@ -55,7 +58,7 @@
             <li><a href="../profile/index.html">Profile</a></li>
             <li><a href="../people/index.html">People</a></li>
             <li><a href="../teams/index.html">Teams</a></li>
-            <li class="active"><a href="../startups/index.html">Startups</a></li>
+            <li><a href="../startups/index.html">Startups</a></li>
             <li><a href="../jobs/index.html">Jobs</a></li>
             <li><a href="../communities/index.html">Communities</a></li>
             <li><a href="../collections/index.html">Collections</a></li>
@@ -71,69 +74,31 @@
     <div class="container main">
         <div class="row">
             <div class="col-xs-12">
-                <div class="row">
-                    <div class="white">
-                        <div class="content text-center clearfix">
-                            <div class="banner" style="background: url(../img/banner-avatar.jpg) center center no-repeat"></div>
-                            <div class="avatar-photo"><img src="../img/avatar.jpg" /></div>
-                            <h3><ul class="stat"><li><span class="editable" contenteditable="true">John Smith</span></li><li>$<span class="editable" contenteditable="true">20</span> / hr</li></ul></h3>
-                            <h4 class="editable" contenteditable="true">Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
-                            <ul class="stat"><li><span class="editable" contenteditable="true">London, United Kingdom</span></li><li><input class="editable_checkbox" type="checkbox" name="" id="remote" checked /><label for="remote">Remote</label></li></ul>
-                            <p class="editable" contenteditable="true">Java, Java Script, HTML5, CSS</p>
-                        </div>
-                        <p class="editable" contenteditable="true">Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
+                <div class="white row-border">
+                    <div class="content text-center clearfix">
+                        <h3>404</h3>
+                        <h4>Page Not Found</h4>
+                        <p>
+                            The page you are looking for doesn't exist or an other error occurred.
+                            <br />
+                            <a href="#">Go back</a>, or head over to <a href="#">main page</a> to choose a new direction.
+                        </p>
                     </div>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#">Members</a></li>
-                        <li><a href="#">Vacancies</a></li>
-                        <li><a href="#">Invited</a></li>
-                    </ul>
-                    <div class="white row-border clearfix">
-                        <form class="form-inline">
-                            <div class="row">
-                                <div class="form-group col-xs-12 col-sm-9">
-                                    <input type="text" class="form-control" id="search" placeholder="Search">
-                                </div>
-                                <button type="submit" class="btn btn-default col-sm-3">Submit</button>
-                            </div>
-                        </form>
+                </div>
+                <div class="col-sm-12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-no-border col s1"></div>
                     </div>
-                    <div class="white row-border pointer" onclick="window.location = 'collection.html';">
-                        <div class="content text-center">
-                            <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
-                            <div class="avatar-photo"><img src="../img/no-photo.png" /></div>
-                            <h3><ul class="stat"><li>Greg Brown</li></ul></h3>
-                            <h4>Tagline</h4>
-                            <ul class="stat"><li>New York, USA</li></ul>
-                            <ul class="stat"><li>2 Followers</li><li>54 Following</li><li>19 Posts</li></ul>
-                        </div>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis. Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et.</p>
-                        <div class="card-footer clearfix">
-                            <div class="pull-right">
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-star fa-lg" title="Follow"></span>
-                                    <span>Follow</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-envelope fa-lg" title="Contact"></span>
-                                    <span>Contact</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-check-square fa-lg" title="Invite"></span>
-                                    <span>Invite</span>
-                                </a>
-                                <a href="#" class="ticket-btn">
-                                    <span class="fa fa-share-alt fa-lg" title="Share"></span>
-                                    <span>Share</span>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+                <div class="white row-border end clearfix">
+                    <div class="text-center">
+                        <h4>You have reached the end</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="fixed-action-btn">
         <a data-target="modal" class="btn-floating btn-large waves-effect waves-light">
             <span class="fa fa-plus fa-lg"></span>
@@ -186,9 +151,9 @@
             </div>
         </div>
     </div>
-    <script src="../js/jquery.js"></script>
-    <script src="../js/custom.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script>
