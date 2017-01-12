@@ -137,11 +137,6 @@ body {
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
-/*@font-face {
-  font-family: 'BebasNeue';
-  src: url('../fonts/bebasneue.eot');
-  src: url('../fonts/bebasneue?#iefix') format('embedded-opentype'), url('../fonts/bebasneue.woff') format('woff'), url('../fonts/bebasneue.ttf') format('truetype');
-}*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -160,10 +155,6 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-.main p a {
-  color: #0072dc;
-  text-decoration: none;
 }
 .main p a:hover,
 .main p a:focus {
@@ -2032,7 +2023,7 @@ html {
   /* Added !important to override smoothscroll.js height: auto; */
 }
 .main .white{background-color:#fff;padding:10px 40px}
-.main .white h4{color:#aaa;font-weight:normal}
+.main .white h4{font-weight:normal}
 .main .white.cover{padding:10px}
 .main .content{padding-bottom: 40px}
   .page .content{padding-bottom:10px}
@@ -3430,7 +3421,16 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .card-nexus{margin:0}
 .card-nexus-no-border{height:20px}
-.card-nexus-border{border-left:1px solid #eee;height:20px}
+.card-nexus-border{border-left:1px solid #f2f2f2;height:24px}
+.card-nexus-info{border-left:1px solid #f2f2f2}
+    .card-nexus-info .content{padding:10px}
+.card-nexus-start{margin-top:24px}
+    .card-nexus-start .card-nexus-info .content{margin-top:-24px}
+.card-nexus-the-end .card-nexus-info{height:24px}
+    .card-nexus-the-end p a:hover{text-decoration:none}
+    .card-nexus-the-end .content{padding-bottom:24px}
+.card-nexus-info-icon{color:#eee;position:relative;right:51px;margin-right:-16px}
+.card-nexus-info .content{padding-left:32px}
 .card-footer{margin:0 -40px -10px;padding:12px 20px 24px}
   .card-footer button{color:#555;padding:0 18px;text-transform:none}
     .card-footer button:hover{background-color:transparent;color:#0072dc}
@@ -3453,14 +3453,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
           -ms-transition: background-color .5s linear, border .5s ease;
           transition: background-color .5s linear, border .5s ease}
 .editable{border-bottom:1px solid #f2f2f2}
-.editable{display:inline-block;padding:10px;margin:0 -10px}
+.editable{display:inline-block;padding:10px;margin:0 -4px}
   .editable.avatar-photo:hover img{box-shadow:0 0 0 2px #f2f2f2}
   .banner-edit{background:url(../img/edit-banner.png) no-repeat!important}
   .banner-edit:hover{box-shadow:0 0 0 2px #eee;cursor:pointer}
 .editable:focus{border-bottom:1px solid #0072dc;color:#111;outline:none}
 .editable_checkbox{margin:4px!important;position:relative;top:1px}
-.lock,.lock-info{background-color:#f9f9f9!important;border-color:#eee;opacity:.7}
-  .lock:hover{background-color:#eee;cursor:pointer;opacity:1}
+.lock,.lock-info{background-color:#f9f9f9!important;border-color:#eee;color:rgba(0, 0, 0, 0.5);transition:border-color .5s ease,color .5s ease}
+  .lock:hover{background-color:#eee;border-color:#ccc;cursor:pointer;color:rgba(0, 0, 0, 0.87)}
   .lock h5{margin:0}
 h3.editable,h4.editable{margin:0}
 sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;font-weight:700;line-height:1;color:#fff;
@@ -3841,7 +3841,6 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .carousel{height:auto}
 .carousel-text h3{text-transform:uppercase;font-size:16px;font-weight:bold}
 .carousel-text h5{text-transform:uppercase;font-size:11px;font-weight:bold}
-/*.carousel-text h3{font-family:'Bebasneue', sans-serif}*/
 .fixed-action-btn .fa{margin:0;line-height:26px}
 .btn-margin{margin:20px 0}
 .content-no-header{margin-top:20px}
@@ -3849,6 +3848,8 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .content-form{margin:20px 12px 12px}
 .default{color:#555}
     .default:hover{color:#039be5}
+.rate{padding-left:30px!important}
+.comment-limit{margin-right:12px}
 
 /* material update */
 .btn{font-size:14px;line-height:1.6}
@@ -3856,7 +3857,7 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
     .card .card-content{padding:0}
 .collection .collection-item:hover{background-color:#f9f9f9;cursor:pointer}
 .collection .collection-item.avatar i.circle{background-color:#039be5}
-.collapsible{border-color:#f2f2f2}
+.collapsible{border-color:#f2f2f2;margin:0}
     .collapsible p{padding:0 0 12px}
 .card,.card-panel,.collapsible{box-shadow:none}
 .collapsible-body{background-color:#f9f9f9;padding:24px 24px 12px}
@@ -3869,10 +3870,8 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .modal .row{margin-bottom:0}
 .modal-create{padding:0!important}
     .modal-create .collection{margin:0}
-.modal .content{margin-top:24px}
 .modal h3{font-weight:normal}
 /* material update END */
-.comment-limit{margin-right:12px}
 
 .progress {
     height: 20px;

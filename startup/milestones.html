@@ -34,13 +34,13 @@
     <!-- SIDEBAR
     ============================== -->
     <!-- Sidebar button open -->
-    <div class="sidebar__btn sidebar__btn_open hidden">
+    <div class="sidebar__btn sidebar__btn_open show">
         <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Open menu" aria-hidden="true"></span>
         <span class="fa fa-arrow-circle-right fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
     </div>
 
     <!-- Sidebar menu -->
-    <div class="sidebar__menu scrollspy_menu">
+    <div class="sidebar__menu scrollspy_menu sidebar__menu_hidden">
 
         <!-- Sidebar button close -->
         <div class="sidebar__btn sidebar__btn_close show">
@@ -71,224 +71,132 @@
     <div class="container main">
         <div class="row">
             <div class="col-xs-12">
-                <div class="white row-border">
-                    <div class="content text-center clearfix">
-                        <h3>Join Us</h3>
-                        <p>
-                            Зарегистрируйтесь, если вы хотите создать стартап или присоединиться к разработке существующих.
-                        </p>
-                        <div class="col s12 text-center">
-                            <button data-target="modal-sign_up" type="submit" class="waves-effect waves-light btn-large btn-margin">
-                                <span class="fa fa-thumbs-up fa-lg"></span>
-                                <span>Sign Up</span>
-                            </button>
-                            <div class="login-links" data-target="modal-login">
-                                <p><a href="login.html">Already have an account?</a></p>
+                <div class="row">
+                    <div class="col s12 lock-info clearfix">
+                        <div class="row card-nexus card-nexus-start">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-info col s11">
+                                <div class="content">
+                                    <h4><span class="card-nexus-info-icon fa fa-circle"></span>Start &middot; <small>11 Jan 2017</small></h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-no-border col s1"></div>
+                    <div class="col s12 lock-info clearfix">
+                        <div class="row card-nexus">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-border col s1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="white row-border clearfix">
-                    <div class="content text-center">
-                        <div class="banner" style="background: url(../img/banner-ks.jpg) center center no-repeat"></div>
-                        <div class="avatar-photo"><img src="../img/logo.jpg" /></div>
-                        <h3><ul class="stat"><li>Kick Up Startup</li></ul></h3>
-                        <h4>A community based Startup Foundry</h4>
-                        <ul class="stat"><li>Prague, Czech Republic</li></ul>
-                        <ul class="stat"><li>1,508 Followers</li><li>8 Members</li><li>184 Posts</li></ul>
-                    </div>
-                    <p>Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                    <div class="card-footer clearfix">
+                    <div class="white row-border clearfix">
                         <div class="pull-right">
                             <a href="#" class="ticket-btn">
-                                <span class="fa fa-star fa-lg" title="Following"></span>
-                                <span>Follow</span>
-                            </a>
-                            <a href="#" class="ticket-btn">
-                                <span class="fa fa-user-plus fa-lg" title="Hire"></span>
-                                <span>2 Vacancies</span>
-                            </a>
-                            <a href="#" class="ticket-btn">
-                                <span class="fa fa-share-alt fa-lg" title="Share"></span>
-                                <span>Share</span>
+                                <span class="fa fa-info-circle fa-lg" title="Tips"></span>
                             </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-no-border col s1"></div>
-                    </div>
-                </div>
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Details</a></li>
-                    <li><a href="startups/development.html">Development</a></li>
-                    <li><a href="startups/reports.html">Reports</a></li>
-                    <li><a href="startups/promotion.html">Promotion</a></li>
-                </ul>
-                <div class="white row-border">
-                    <div class="content">
-                        <h3>Text</h3>
-                        <p>Здесь будет краткая информация о разделе. Suspendisse vel augue non tortor sodales porta id eu odio. Aliquam erat volutpat. Vivamus id quam suscipit, consectetur enim imperdiet, tristique enim. Nam vulputate at dui id consequat. <a href="#">link</a> Mauris ut ligula eros. Vivamus vulputate, lacus non porta blandit, ex turpis ultrices justo, sit amet faucibus tortor augue id nulla. Curabitur nec interdum tellus, interdum feugiat ante. Proin quis quam tincidunt, porta velit posuere, gravida est. Nulla sit amet tempus justo, quis commodo massa.</p>
-                    </div>
-                    <div class="card-footer clearfix">
-                        <div class="pull-right">
-                            <a href="#" class="ticket-btn">
-                                <span class="fa fa-pencil fa-lg" title="Edit"></span>
-                                <span>Edit</span>
-                            </a>
+                        <div class="content text-center">
+                            <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
+                            <div class="avatar-photo"><img src="../img/no-photo.png" /></div>
+                            <ul class="stat"><li><h3>Name</h3></li></ul>
+                            <h4>Mission</h4>
+                            <ul class="stat"><li>Location</li></ul>
+                            <ul class="stat"><li>0 Followers</li><li>1 Member</li><li>0 Posts</li></ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-border col s1"></div>
-                    </div>
-                </div>
-                <div class="white row-border pointer clearfix" data-target="modal-post">
-                    <div class="content text-center">
-                        <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
-                        <div class="avatar-photo"><img src="../img/no-photo.png" /></div>
-                        <ul class="stat"><li><h3>Idea</h3></li></ul>
-                        <ul class="stat"><li>8 Sections</li><li>70 Comments</li></ul>
-                    </div>
-                    <p>Mission. Specify the problem that you’re trying to solve (не фичи). Expertise через Request Feedback. Проведение экспертизы проекта, чтобы сама идея была рабочей и предоставил список ожидаемых проблем и пути их решения. Пользователи смогут пройти опросник. Определив задачи проекта теперь можем подобрать домен.</p>
-                    <div class="card-footer clearfix">
-                        <div class="pull-right">
-                            <a href="#" class="ticket-btn">
-                                <span class="fa fa-pencil fa-lg" title="Edit"></span>
-                                <span>Edit</span>
-                            </a>
-                            <a href="#" class="ticket-btn">
-                                <span class="fa fa-child fa-lg" title="Public"></span>
-                                <span>Public</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-border col s1"></div>
-                    </div>
-                </div>
-                <div class="white row-border pointer clearfix" data-target="modal-post">
-                    <div class="content text-center">
-                        <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
-                        <div class="avatar-photo"><img src="../img/no-photo.png" /></div>
-                        <ul class="stat"><li><h3>User cases</h3></li></ul>
-                        <ul class="stat"><li>31 Comments</li></ul>
-                    </div>
-                    <p>
-                        Типы пользователей. Что за пользователь, какая у него проблема и как решается с помощью проекта. Get to know your target group. Have a look at what competitors have done in this area.
-                        Перечислить чекбоксы.
-                        Кейсы создаются в виде тикетов: описание пользователя, что нужно, как решается.
-                    </p>
-                    <div class="card-footer clearfix">
-                        <div class="pull-right">
-                            <a href="#" class="ticket-btn">
-                                <span class="fa fa-pencil fa-lg" title="Edit"></span>
-                                <span>Edit</span>
-                            </a>
-                            <a href="#" class="ticket-btn">
-                                <span class="fa fa-child fa-lg" title="Public"></span>
-                                <span>Public</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-border col s1"></div>
-                    </div>
-                </div>
-                <div class="white row-border clearfix">
-                    <div class="content">
-                        <h3>Elevator Pitch</h3>
-                        <p>Mauris ut ligula eros. Vivamus vulputate, lacus non porta blandit, ex turpis ultrices justo, sit amet faucibus tortor augue id nulla. Curabitur nec interdum tellus, interdum feugiat ante. Proin quis quam tincidunt, porta velit posuere, gravida est. Nulla sit amet tempus justo, quis commodo massa..</p>
-                        <div class="col s12 text-center">
-                            <button type="submit" class="waves-effect waves-light btn-large btn-margin">
-                                <span class="fa fa-check-circle fa-lg"></span>
-                                <span>Start</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-border col s1"></div>
-                    </div>
-                </div>
-                <div class="col s12 clearfix lock-info">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-info col s11">
-                            <div class="content">
-                                <h4><span class="card-nexus-info-icon fa fa-circle"></span>Not time yet</h4>
-                                <p>Блоки ниже будут открываться автоматически по мере заполнения предыдущих разделов. Тем не менее, вы вольны открыть их в любой момент кликнув на нужный.</p>
+                        <p>Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
+                        <div class="card-footer clearfix">
+                            <div class="pull-right">
+                                <a href="#" class="ticket-btn">
+                                    <span class="fa fa-pencil fa-lg" title="Edit"></span>
+                                    <span>Edit</span>
+                                </a>
+                                <a href="#" class="ticket-btn">
+                                    <span class="fa fa-envelope fa-lg" title="Members"></span>
+                                    <span>Invite</span>
+                                </a>
+                                <a href="#" class="ticket-btn">
+                                    <span class="fa fa-share-alt fa-lg" title="Share"></span>
+                                    <span>Share</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-border col s1"></div>
+                    <div class="col s12 lock-info clearfix">
+                        <div class="row card-nexus">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-border col s1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="white row-border clearfix lock">
-                    <div class="content">
-                        <h3>Sketch</h3>
-                        <p>Getting a basic concept. Имея кейсы мы теперь можем создать необходимые страницы, которые и видны как результат этапа. Указать, что даже после завершения задачи, она может быть продолжена позже в случае необходимости изменений и новых фич.</p>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#">Details</a></li>
+                        <li><a href="startups/development.html">Development</a></li>
+                        <li><a href="startups/reports.html">Reports</a></li>
+                        <li><a href="startups/promotion.html">Promotion</a></li>
+                    </ul>
+                    <div class="white row-border">
+                        <div class="content">
+                            <h3>Text</h3>
+                            <p>Здесь будет краткая информация о разделе. Suspendisse vel augue non tortor sodales porta id eu odio. Aliquam erat volutpat. Vivamus id quam suscipit, consectetur enim imperdiet, tristique enim. Nam vulputate at dui id consequat. <a href="#">link</a> Mauris ut ligula eros. Vivamus vulputate, lacus non porta blandit, ex turpis ultrices justo, sit amet faucibus tortor augue id nulla. Curabitur nec interdum tellus, interdum feugiat ante. Proin quis quam tincidunt, porta velit posuere, gravida est. Nulla sit amet tempus justo, quis commodo massa.</p>
+                        </div>
+                        <div class="card-footer clearfix">
+                            <div class="pull-right">
+                                <a href="#" class="ticket-btn">
+                                    <span class="fa fa-pencil fa-lg" title="Edit"></span>
+                                    <span>Edit</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-border col s1"></div>
+                    <div class="col s12 lock-info clearfix">
+                        <div class="row card-nexus">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-border col s1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="white row-border clearfix lock">
-                    <div class="content">
-                        <h3>Wireframe</h3>
-                        <p>Refining the concept further.</p>
+                    <div class="col s12 lock-info clearfix">
+                        <div class="row card-nexus">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-info col s11">
+                                <div class="content">
+                                    <h4><span class="card-nexus-info-icon fa fa-circle"></span>Milestone name 1 reached &middot; <small>21 Jan 2017</small></h4>
+                                    <p>Например, первых 10 early adopters. Ссылка ведет на список всех milestones, которые будет в виде коллекции в табе Reports. Текст, если нужен. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-border col s1"></div>
+                    <div class="col s12 lock-info clearfix">
+                        <div class="row card-nexus">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-border col s1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="white row-border clearfix lock">
-                    <div class="content">
-                        <h3>Mockup</h3>
-                        <p>Имея кейсы мы теперь можем создать необходимые страницы, которые и видны как результат этапа. Указать, что даже после завершения задачи, она может быть продолжена позже в случае необходимости изменений и новых фич.</p>
+                    <div class="white row-border clearfix ">
+                        <div class="content">
+                            <h3>Idea</h3>
+                            <p>
+                                asd
+                            </p>
+                            <div class="col-sm-12 text-center">
+                                <a href="1.html" class="waves-effect waves-light btn-large btn-margin">
+                                    <span class="fa fa-check-circle fa-lg"></span>
+                                    <span>Start</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col s12 clearfix">
-                    <div class="row card-nexus">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-border col s1"></div>
+                    <div class="col s12 clearfix">
+                        <div class="row card-nexus">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-border col s1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col s12 clearfix lock-info">
-                    <div class="row card-nexus card-nexus-the-end">
-                        <div class="col s1">&nbsp;</div>
-                        <div class="card-nexus-info col s11">
-                            <div class="content">
-                                <h4><span class="card-nexus-info-icon fa fa-circle"></span>You have reached the end</h4>
-                                <p>Jump to <a href="#">top of page</a></p>
+                    <div class="col s12 clearfix lock-info">
+                        <div class="row card-nexus card-nexus-the-end">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-info col s11">
+                                <div class="content">
+                                    <h4><span class="card-nexus-info-icon fa fa-circle"></span>You have reached the end</h4>
+                                    <p>Jump to <a href="#">top of page</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -733,7 +641,6 @@
     </div>
     <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script>
