@@ -3431,13 +3431,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     .card-nexus-the-end .content{padding-bottom:24px}
 .card-nexus-info-icon{color:#eee;position:relative;right:51px;margin-right:-16px}
 .card-nexus-info .content{padding-left:32px}
-.card-footer{margin:0 -40px -10px;padding:12px 20px 24px}
+.card-footer{padding:12px 20px 24px;position:absolute;bottom:0;right:0}
   .card-footer button{color:#555;padding:0 18px;text-transform:none}
     .card-footer button:hover{background-color:transparent;color:#0072dc}
     .card-footer .fa{margin-right:5px}
 .modal-content .card-footer{margin:auto}
-.ticket-btn{color:#555;padding:15px}
-  .ticket-btn:hover,.ticket-btn.active{color:#0072dc;text-decoration:none}
+
+.ticket-btn,.tips a{color:#555;padding:15px}
+  .ticket-btn:hover,.ticket-btn.active,.tips a:hover,.tips a.active{color:#0072dc;text-decoration:none}
 .nav-tabs{margin:0 0 -1px}
   .nav-tabs li > a{color:#555}
 .pointer{background:#fff;border:1px solid #f2f2f2;
@@ -3459,7 +3460,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .banner-edit:hover{box-shadow:0 0 0 2px #eee;cursor:pointer}
 .editable:focus{border-bottom:1px solid #0072dc;color:#111;outline:none}
 .editable_checkbox{margin:4px!important;position:relative;top:1px}
-.lock,.lock-info{background-color:#f9f9f9!important;border-color:#eee;color:rgba(0, 0, 0, 0.5);transition:border-color .5s ease,color .5s ease}
+.lock,.lock-info{background-color:#f9f9f9!important;border-color:#eee;color:rgba(0, 0, 0, 0.5);
+  -webkit-transition:border-color .5s ease,color .5s ease;
+  -o-transition:border-color .5s ease,color .5s ease;
+  transition:border-color .5s ease,color .5s ease}
   .lock:hover{background-color:#eee;border-color:#ccc;cursor:pointer;color:rgba(0, 0, 0, 0.87)}
   .lock h5{margin:0}
 h3.editable,h4.editable{margin:0}
@@ -3854,12 +3858,16 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 /* material update */
 .btn{font-size:14px;line-height:1.6}
 .card{margin:0}
-    .card .card-content{padding:0}
+    .card .tips{float:right;margin:8px -28px}
+        .card .card-content{padding:0;margin-bottom:12px}
+        .card-reveal{padding:10px 40px;cursor:default}
+            .card-reveal h3{margin:20px 0 10px}
+            .card .card-reveal .card-title{font-size:1.33333333em}
+.card,.card-panel,.collapsible{box-shadow:none}
 .collection .collection-item:hover{background-color:#f9f9f9;cursor:pointer}
 .collection .collection-item.avatar i.circle{background-color:#039be5}
 .collapsible{border-color:#f2f2f2;margin:0}
     .collapsible p{padding:0 0 12px}
-.card,.card-panel,.collapsible{box-shadow:none}
 .collapsible-body{background-color:#f9f9f9;padding:24px 24px 12px}
 .modal,.modal.modal-fixed-footer{max-width:640px;max-height:90%}
 .modal.modal-fixed-footer{height:90%;top:5%!important}
