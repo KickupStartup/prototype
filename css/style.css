@@ -15,6 +15,17 @@ body {
   font-size: 15px;
   line-height: 1.42857143;
 }
+html.welcome{ 
+  background:url(../img/bg-pattern.png),  url(../img/welcome.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    html.welcome .container.shadow{padding-top:90px;text-shadow:0 0 20px rgba(0,0,0,.7)}
+    html.welcome .container.shadow .heading,html.welcome a{color:#fff}
+    .heading .text-primary{color:#fcae11}
+    button.warning{background-color:#fcae11;color:#fff}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
@@ -156,12 +167,11 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-.main p a:hover,
-.main p a:focus {
+.white p a:hover,.white h3 a:hover,
+.white p a:focus,.white h3 a:focus {
   color: #0072dc;
-  text-decoration: underline;
 }
-.main a:focus {
+.white a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -2235,17 +2245,17 @@ body:not(.classic) .site-wrapper .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.heading__pre {
+.heading_pre {
   text-align: center;
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.75);
 }
-.heading__pre::before,
-.heading__pre::after {
+.heading_pre::before,
+.heading_pre::after {
   content: "★";
   margin: 0 5px;
 }
-.heading__pre + .heading {
+.heading_pre + .heading {
   margin-top: 0 !important;
 }
 .heading {
@@ -2257,12 +2267,8 @@ body:not(.classic) .site-wrapper .container {
 .heading_lg {
   font-size: 36px;
 }
-.heading__sub {
-  text-align: center;
-  font-size: 15px;
-  font-style: italic;
-}
-.heading + .heading__sub {
+.heading_sub{color:#fff;text-align:center}
+.heading + .heading_sub {
   margin: -40px auto 40px;
 }
 @media (min-width: 768px) {
@@ -3436,8 +3442,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     .card-footer button:hover{background-color:transparent;color:#0072dc}
     .card-footer .fa{margin-right:5px}
 .modal-content .card-footer{margin:auto}
+.modal-title small{position:relative;top:-1px}
 
-.ticket-btn,.tips a{color:#555;padding:15px}
+.ticket-btn,.modal-footer a{color:#555;padding:15px}
   .ticket-btn:hover,.ticket-btn.active,.tips a:hover,.tips a.active{color:#0072dc;text-decoration:none}
 .nav-tabs{margin:0 0 -1px}
   .nav-tabs li > a{color:#555}
@@ -3453,6 +3460,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
           -o-transition: background-color .5s linear, border .5s ease;
           -ms-transition: background-color .5s linear, border .5s ease;
           transition: background-color .5s linear, border .5s ease}
+.card-reveal{border:1px solid #f2f2f2}
 .editable{border-bottom:1px solid #f2f2f2}
 .editable{display:inline-block;padding:10px;margin:0 -4px}
   .editable.avatar-photo:hover img{box-shadow:0 0 0 2px #f2f2f2}
@@ -3849,6 +3857,7 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .btn-margin{margin:20px 0}
 .content-no-header{margin-top:20px}
 .login-links{margin:5px 0 20px}
+    .login-links p a:hover{text-decoration:none}
 .content-form{margin:20px 12px 12px}
 .default{color:#555}
     .default:hover{color:#039be5}
@@ -3858,10 +3867,10 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 /* material update */
 .btn{font-size:14px;line-height:1.6}
 .card{margin:0}
-    .card .tips{float:right;margin:8px -28px}
+    .card .tips a{color:#555;float:right}
+        .card .tips a:hover{color:#0072dc}
         .card .card-content{padding:0;margin-bottom:12px}
-        .card-reveal{padding:10px 40px;cursor:default}
-            .card-reveal h3{margin:20px 0 10px}
+        .card .card-reveal{padding:24px;cursor:default}
             .card .card-reveal .card-title{font-size:1.33333333em}
 .card,.card-panel,.collapsible{box-shadow:none}
 .collection .collection-item:hover{background-color:#f9f9f9;cursor:pointer}
@@ -3870,7 +3879,8 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
     .collapsible p{padding:0 0 12px}
 .collapsible-body{background-color:#f9f9f9;padding:24px 24px 12px}
 .modal,.modal.modal-fixed-footer{max-width:640px;max-height:90%}
-.modal.modal-fixed-footer{height:90%;top:5%!important}
+.modal,.modal.modal-fixed-footer{height:90%;top:5%!important}
+.modal.modal-fixed-footer.empty{}
 .modal .table-of-contents{position:fixed}
 .modal img{width:100%}
 .modal textarea{height:auto}
@@ -3880,6 +3890,7 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .modal-create{padding:0!important}
     .modal-create .collection{margin:0}
 .modal h3{font-weight:normal}
+.btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}
 /* material update END */
 .tips-blue{color:#31708f;background-color:#d9edf7!important;border-color:#bce8f1}
 
