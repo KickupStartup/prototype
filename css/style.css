@@ -26,6 +26,8 @@ html.welcome{
     html.welcome .container.shadow .heading,html.welcome a{color:#fff}
     .heading .text-primary{color:#fcae11}
     button.warning{background-color:#fcae11;color:#fff}
+        button.warning:hover{background-color:#fdbe41}
+        button.warning:focus{background-color:#e29c0f}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
