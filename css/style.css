@@ -25,10 +25,9 @@ html.welcome{
     html.welcome .container.shadow{padding-top:90px;text-shadow:0 0 20px rgba(0,0,0,.7)}
     html.welcome .container.shadow .heading,html.welcome a{color:#fff}
     .heading .text-primary{color:#fcae11}
-    button.warning{background-color:#fcae11;color:#fff}
-        button.warning:hover{background-color:#fdbe41}
-        button.warning:focus{background-color:#e29c0f}
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+    .btn-warning{background-color:#fcae11;color:#fff}
+        .btn-warning:hover{background-color:#fdbe41}
+        .btn-warning:focus{background-color:#e29c0f}
 @media print {
   *,
   *:before,
@@ -521,7 +520,12 @@ dd {
   padding-left: 15px;
   padding-right: 15px;
 }
+.back a{color:#333333}
 @media (min-width: 768px) {
+    .back{background-color:#f9f9f9;margin-top:-20px;padding-top:20px!important;position:fixed;z-index:2}
+  .page .main{padding-top:90px}
+    .page .main-padding{padding-top:22px}
+    .page .main.inner{padding-top:140px}
   .container {
     max-width: 620px;
   }
@@ -2003,7 +2007,7 @@ button.close {
   margin-left:10px;
   padding:10px 15px!important;
 }
-.sidebar-menu__ul > li > a,.fullpage__nav > li > a{
+.sidebar-menu__ul > li > a,.fullpage_nav > li > a{
   display: block;
   color: #424242;
   text-decoration: none;
@@ -2017,8 +2021,8 @@ button.close {
 .nav > li > a{white-space:nowrap}
 .sidebar-menu__ul > li > a:hover,
 .sidebar-menu__ul > li > a:focus,
-.fullpage__nav > li > a:hover,
-.fullpage__nav > li > a:focus
+.fullpage_nav > li > a:hover,
+.fullpage_nav > li > a:focus
  {
   background: transparent;
   color: #0072dc;
@@ -2982,7 +2986,6 @@ fieldset[disabled] a.btn {
   border-width: 0 0 1px;
 }
 @media (min-width: 768px) {
-  .page .main{padding-top:90px}
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3155,7 +3158,7 @@ fieldset[disabled] a.btn {
   .navbar-form .form-group:last-child {
     margin-bottom: 0;
   }
-  .fullpage__nav{padding-left:40px}
+  .fullpage_nav{padding-left:40px}
 }
 @media (min-width: 768px) {
   .navbar-form {
@@ -3867,16 +3870,13 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .comment-limit{margin-right:12px}
 
 /* material update */
-.btn{font-size:14px;line-height:1.6}
-.card{margin:0}
+.card{margin:0!important}
     .card .tips a{color:#555;float:right}
         .card .tips a:hover{color:#0072dc}
         .card .card-content{padding:0;margin-bottom:12px}
-        .card .card-reveal{padding:24px;cursor:default}
-            .card .card-reveal .card-title{font-size:1.33333333em}
+        .card .card-reveal{padding:30px 40px;cursor:default}
+            .card .card-reveal .modal-title{margin-top:0}
 .card,.card-panel,.collapsible{box-shadow:none}
-.collection .collection-item:hover{background-color:#f9f9f9;cursor:pointer}
-.collection .collection-item.avatar i.circle{background-color:#039be5}
 .collapsible{border-color:#f2f2f2;margin:0}
     .collapsible p{padding:0 0 12px}
 .collapsible-body{background-color:#f9f9f9;padding:24px 24px 12px}
@@ -3892,9 +3892,15 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .modal-create{padding:0!important}
     .modal-create .collection{margin:0}
 .modal h3{font-weight:normal}
+.modal .collection .collection-item:hover{background-color:#f9f9f9;cursor:pointer}
+.modal .collection .collection-item.avatar i.circle{background-color:#039be5}
 .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}
 /* material update END */
 .tips-blue{color:#31708f;background-color:#d9edf7!important;border-color:#bce8f1}
+.tweet{margin-top:8px}
+.chat{border:none;margin:60px -15px 20px}
+    .chat .collection-item{border:none}
+    .chat .chat-date{color:#9e9e9e;float:right;font-size:0.8rem}
 
 .progress {
     height: 20px;

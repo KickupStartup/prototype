@@ -2035,7 +2035,7 @@ button.close {
   margin-left:10px;
   padding:10px 15px!important;
 }
-.sidebar-menu__ul > li > a,.fullpage__nav > li > a{
+.sidebar-menu__ul > li > a,.fullpage_nav > li > a{
   display: block;
   color: #fff;
   text-decoration: none;
@@ -2049,8 +2049,8 @@ button.close {
 .nav > li > a{white-space:nowrap}
 .sidebar-menu__ul > li > a:hover,
 .sidebar-menu__ul > li > a:focus,
-.fullpage__nav > li > a:hover,
-.fullpage__nav > li > a:focus
+.fullpage_nav > li > a:hover,
+.fullpage_nav > li > a:focus
  {
   background: transparent;
   color: #fff;
@@ -3411,7 +3411,7 @@ fieldset[disabled] a.btn {
   .navbar-form .form-group:last-child {
     margin-bottom: 0;
   }
-  .fullpage__nav{padding-left:40px}
+  .fullpage_nav{padding-left:40px}
 }
 @media (min-width: 768px) {
   .navbar-form {
