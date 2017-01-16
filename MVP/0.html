@@ -18,9 +18,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
-                    <ul class="nav navbar-nav pull-left">
+                    <!--<ul class="nav navbar-nav pull-left">
                         <li><a href="../profile/index.html" class="avatar-small"><img src="../img/avatar.jpg" /></a></li>
-                    </ul>
+                    </ul>-->
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage_nav nav navbar-nav pull-right">
@@ -66,23 +66,78 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="row">
-                    <div class="white row-border clearfix">
-                        <div class="content">
-                            <h3>Before we start</h3>
+                    <div class="card white row-border">
+                        <div class="content clearfix">
+                            <h3>Welcome Aboard!</h3>
                             <p>
-                                Вы в начале пути создания amazing стартапа и вам нужен <a href="#">business plan</a> (ссылка на наш блог почему нужен бизнес план). Наверняка он ассоциируется у вас с созданием длинных и скучных документов со множеством графиков, таблиц и финансовых прогнозов. Обычные бизнес планы долго писать, быстро устаревают и сложно найти желающих их читать.
-                            <p>
-                                Не отчаивайтесь! Мы с вами постепенно будем заполнять разделы и тут же получать отзывы, что поможет быстро найти ответы на все важные вопросы для успешного развития стартапа, а в итоге у вас будет живой и актуальный бизнес план на базе отзывов множества пользователей и экспертов. Он поможет вам быстро разработать клевый MVP и успешно найти инвестиции.
+                                Login or Sign up чтобы создать свой awesome стартап или присоединяйтесь к разработке уже существующих!
                             </p>
-                            <p>Мы рекомендуем не пропускать шаг проверки идеи, ведь great ideas don’t always make great businesses.</p>
+                            <div class="card-footer clearfix">
+                                <div class="pull-right">
+                                    <a href="#" class="ticket-btn">
+                                        <span class="fa fa-linkedin fa-lg"></span>
+                                        <span>Linkedin</span>
+                                    </a>
+                                    <a href="#" class="ticket-btn">
+                                        <span class="fa fa-github fa-lg"></span>
+                                        <span>Github</span>
+                                    </a>
+                                    <a href="#" class="ticket-btn">
+                                        <span class="fa fa-google-plus fa-lg"></span>
+                                        <span>Google+</span>
+                                    </a>
+                                    <a href="#" class="ticket-btn">
+                                        <span class="fa fa-twitter fa-lg"></span>
+                                        <span>Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 text-center">
-                            <a href="0-post.html" class="waves-effect waves-light btn-large btn-margin">
-                                <span class="fa fa-lightbulb-o fa-lg"></span>
-                                <span>Validate Your Idea</span>
-                            </a>
-                            <div class="login-links" data-target="modal-login">
-                                <p><a href="1.html">Skip. My great idea is validated</a></p>
+                    </div>
+                    <div class="col s12 clearfix">
+                        <div class="row card-nexus">
+                            <div class="col s1">&nbsp;</div>
+                            <div class="card-nexus-no-border col s1"></div>
+                        </div>
+                    </div>
+                    <div class="card white row-border pointer clearfix">
+                        <div data-target="modal-post">
+                            <div class="content text-center">
+                                <div class="banner" style="background: url(../img/banner-idea.jpg) center center no-repeat"></div>
+                                <div class="avatar-photo"><img src="../img/avatar-idea.jpg" /></div>
+                                <ul class="stat"><li><h3>Idea</h3></li></ul>
+                                <ul class="stat"><li>0 Sections</li><li>0 Comments</li></ul>
+                            </div>
+                            <p>
+                                Для создания amazing стартапа необходима проверенная идея, иначе вы рискуете разработать не востребованный рынком продукт или сервис.
+                            </p>
+                            <p>Мы рекомендуем не пропускать этот шаг, ведь great ideas don’t always make great businesses.</p>
+                        </div>
+                        <div class="card-footer clearfix">
+                            <div class="col s12 text-center">
+                                <a href="#" data-target="modal-welcome" class="waves-effect waves-light btn-large btn-margin">
+                                    <span class="fa fa-lightbulb-o fa-lg"></span>
+                                    <span>Validate Your Idea</span>
+                                </a>
+                                <div class="login-links" data-target="modal-login">
+                                    <p><a href="1.html">Skip. My great idea is validated</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white card-reveal">
+                            <div class="tips">
+                                <a href="#!" class="card-title fa fa-remove fa-lg"></a>
+                            </div>
+                            <h3 class="modal-title">Tips</h3>
+                            <div class="modal-body">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        Tip 1
+                                    </div>
+                                    <div class="panel-body">
+                                        text
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -108,18 +163,48 @@
         </div>
     </div>
 
+    <div id="modal-welcome" class="modal bottom-sheet">
+        <div class="modal-content">
+            <a href="#" class="default pull-right"><span class="fa fa-remove fa-lg"></span></a>
+            <h3>Welcome Aboard!</h3>
+            <div class="content clearfix">
+                <p>
+                    Login or Sign up чтобы создать свой awesome стартап или присоединяйтесь к разработке уже существующих!
+                </p>
+                <div class="card-footer clearfix">
+                    <div class="pull-right">
+                        <a href="0-post.html" class="ticket-btn">
+                            <span class="fa fa-linkedin fa-lg"></span>
+                            <span>Linkedin</span>
+                        </a>
+                        <a href="0-post.html" class="ticket-btn">
+                            <span class="fa fa-github fa-lg"></span>
+                            <span>Github</span>
+                        </a>
+                        <a href="0-post.html" class="ticket-btn">
+                            <span class="fa fa-google-plus fa-lg"></span>
+                            <span>Google+</span>
+                        </a>
+                        <a href="0-post.html" class="ticket-btn">
+                            <span class="fa fa-twitter fa-lg"></span>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../js/jquery.js"></script>
     <script src="../js/custom.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
+            $('.slider').slider({ full_width: true });
+        });
+        $(document).ready(function () {
             $('.modal').modal();
-            var textAreas = document.getElementsByTagName('textarea');
-
-            Array.prototype.forEach.call(textAreas, function (elem) {
-                elem.placeholder = elem.placeholder.replace(/\\n/g, '\n');
-            });
         });
     </script>
 </body>

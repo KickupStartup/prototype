@@ -25,7 +25,7 @@ html.welcome{
     html.welcome .container.shadow{padding-top:90px;text-shadow:0 0 20px rgba(0,0,0,.7)}
     html.welcome .container.shadow .heading,html.welcome a{color:#fff}
     .heading .text-primary{color:#fcae11}
-    .btn-warning{background-color:#fcae11;color:#fff}
+    .btn-warning{background-color:#fcae11;color:#fff;text-shadow:none}
         .btn-warning:hover{background-color:#fdbe41}
         .btn-warning:focus{background-color:#e29c0f}
 @media print {
@@ -522,7 +522,7 @@ dd {
 }
 .back a{color:#333333}
 @media (min-width: 768px) {
-    .back{background-color:#f9f9f9;margin-top:-20px;padding-top:20px!important;position:fixed;z-index:2}
+    .back{background-color:#f9f9f9;margin-top:-20px;padding-top:20px!important;position:fixed;z-index:4}
   .page .main{padding-top:90px}
     .page .main-padding{padding-top:22px}
     .page .main.inner{padding-top:140px}
@@ -544,7 +544,7 @@ dd {
   margin-right: -15px;
 }
 .row-border{border:1px solid #f2f2f2}
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col s12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -707,10 +707,10 @@ dd {
   margin-left: 0%;
 }
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col s12 {
     float: left;
   }
-  .col-sm-12 {
+  .col s12 {
     width: 100%;
   }
   .col-sm-11 {
@@ -3442,11 +3442,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     .card-nexus-the-end .content{padding-bottom:24px}
 .card-nexus-info-icon{color:#eee;position:relative;right:51px;margin-right:-16px}
 .card-nexus-info .content{padding-left:32px}
-.card-footer{padding:12px 20px 24px;position:absolute;bottom:0;right:0}
+.card-footer{margin:20px -25px 0}
   .card-footer button{color:#555;padding:0 18px;text-transform:none}
     .card-footer button:hover{background-color:transparent;color:#0072dc}
     .card-footer .fa{margin-right:5px}
-.modal-content .card-footer{margin:auto}
+.modal-content .card-footer{margin:20px auto 0}
 .modal-title small{position:relative;top:-1px}
 
 .ticket-btn,.modal-footer a{color:#555;padding:15px}
@@ -3881,8 +3881,8 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
     .collapsible p{padding:0 0 12px}
 .collapsible-body{background-color:#f9f9f9;padding:24px 24px 12px}
 .modal,.modal.modal-fixed-footer{max-width:640px;max-height:90%}
-.modal,.modal.modal-fixed-footer{height:90%;top:5%!important}
-.modal.modal-fixed-footer.empty{}
+/*.modal,.modal.modal-fixed-footer{height:90%;top:5%!important}*/
+.modal .content{padding:0}
 .modal .table-of-contents{position:fixed}
 .modal img{width:100%}
 .modal textarea{height:auto}
