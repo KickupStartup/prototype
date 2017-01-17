@@ -119,7 +119,7 @@ html.welcome{
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-    background-color:#fcae11;
+    background-color:#ff9100;
   box-shadow: 1px 1px 1px #f2f2f2;
   position: fixed;
   right: 0;
@@ -2038,7 +2038,7 @@ button.close {
 }
 .fullpage_nav > li.active > a {
   color: #fff;
-  background-color:#fdbe41;
+  background-color:#ffab40;
   outline: none;
 }
 /* -------------------- *\
@@ -3891,7 +3891,7 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 /* material update */
 a{color:#ff9100}
     a:hover{color:#fcae11}
-.orange.accent-2:hover{background-color:#fdbe41!important;color:#fff}
+.orange.accent-3:hover{background-color:#fdbe41!important;color:#fff}
 .card{margin:0!important}
     .card .tips a{color:#555;float:right}
         .card .tips a:hover{color:#0072dc}
