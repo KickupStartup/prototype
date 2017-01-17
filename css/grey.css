@@ -121,7 +121,7 @@ html.welcome{
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-    background-color:#0072dc;
+  background-color: #fff;
   box-shadow: 1px 1px 1px #f2f2f2;
   position: fixed;
   right: 0;
@@ -1880,7 +1880,7 @@ button.close {
     right: 51%;
     bottom: 0;
     height: 0;
-    border-bottom: 2px solid #ffac3a;
+    border-bottom: 2px solid #0072dc;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -2020,7 +2020,7 @@ button.close {
 }
 .sidebar-menu__ul > li > a,.fullpage_nav > li > a{
   display: block;
-  color: #eee;
+  color: #424242;
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2035,10 +2035,10 @@ button.close {
 .fullpage_nav > li > a:focus
  {
   background: transparent;
-  color: #ffac3a;
+  color: #0072dc;
 }
 .sidebar-menu__ul > li.active > a {
-  color: #fff;
+  color: #0072dc;
   outline: none;
 }
 /* -------------------- *\
@@ -2741,7 +2741,7 @@ fieldset[disabled] a.btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #42a6f6;
+  background-color: #f2f2f2;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -3013,7 +3013,7 @@ fieldset[disabled] a.btn {
   z-index: 10;
 }
 .navbar-fixed-top .active a{
-  color: #ffac3a;
+  color: #0072dc;
 }
 .navbar-fixed-bottom {
   bottom: 0;
