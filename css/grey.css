@@ -3871,8 +3871,8 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .fixed-action-btn .fa{margin:0;line-height:26px}
 .btn-margin{margin:24px 0}
 .content-no-header{margin-top:20px}
-.login-links{margin:5px 0 20px}
-    .login-links p a:hover{text-decoration:none}
+.modal-bottom-link{margin:5px 0 20px}
+    .modal-bottom-link p a:hover{text-decoration:none}
 .content-form{margin:20px 12px 12px}
 .default{color:#555}
     .default:hover{color:#039be5}
