@@ -17,11 +17,15 @@
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="row">
-                <div class="col s12">
-                    <ul class="fullpage_nav nav navbar-nav pull-right">
+                <div class="col s10">
+                    <ul class="fullpage_nav nav navbar-nav">
                         <li><a href="idea_list.html">Idea List</a></li>
                         <li class="active"><a href="people.html">People</a></li>
-                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="col s2">
+                    <ul class="fullpage_nav nav navbar-nav pull-right">
+                        <li><a href="profile.html" class="avatar-small"><img src="../img/avatar.jpg"></a></li>
                     </ul>
                 </div>
             </div>
@@ -63,15 +67,17 @@
                         <div class="card-nexus-border col s1"></div>
                     </div>
                 </div>
-                <ul class="pagination text-center">
-                    <li class="disabled"><a href="#!"><span class="fa fa-chevron-circle-left fa-lg"></span></a></li>
-                    <li class="active"><a href="#!">1</a></li>
-                    <li class="waves-effect"><a href="#!">2</a></li>
-                    <li class="waves-effect"><a href="#!">3</a></li>
-                    <li class="waves-effect"><a href="#!">4</a></li>
-                    <li class="waves-effect"><a href="#!">5</a></li>
-                    <li class="waves-effect"><a href="#!"><span class="fa fa-chevron-circle-right fa-lg"></span></a></li>
-                </ul>
+                <div class="col s12 clearfix lock-info">
+                    <div class="row card-nexus card-nexus-the-end">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-info col s11">
+                            <div class="content">
+                                <h4><span class="card-nexus-info-icon fa fa-circle"></span>You have reached the end</h4>
+                                <p>Jump to <a href="#">top of page</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
