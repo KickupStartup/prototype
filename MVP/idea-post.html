@@ -19,54 +19,24 @@
             <div class="row">
                 <div class="col-xs-2">
                     <ul class="nav navbar-nav pull-left">
-                        <li><a href="../profile/index.html" class="avatar-small"><img src="../img/avatar.jpg" /></a></li>
+                        <li><a href="profile.html" class="avatar-small"><img src="../img/avatar.jpg" /></a></li>
                     </ul>
                 </div>
                 <div class="col-xs-10">
                     <ul class="fullpage_nav nav navbar-nav pull-right">
-                        <li class="active"><a href="0.html">Validate Idea</a></li>
-                        <li><a href="startup_list.html">Startup List</a></li>
+                        <li><a href="idea_list.html">Idea List</a></li>
+                        <li><a href="people.html">People</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- SIDEBAR
-    ============================== -->
-    <!-- Sidebar button open -->
-    <div class="sidebar__btn sidebar__btn_open show">
-        <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Open menu" aria-hidden="true"></span>
-        <span class="fa fa-arrow-circle-right fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
-    </div>
-
-    <!-- Sidebar menu -->
-    <div class="sidebar__menu scrollspy_menu sidebar__menu_hidden">
-
-        <!-- Sidebar button close -->
-        <div class="sidebar__btn sidebar__btn_close show">
-            <span class="fa fa-bars fa-lg sidebar-btn__icon sidebar-btn-icon__unhover" title="Close menu" aria-hidden="true"></span>
-            <span class="fa fa-arrow-circle-left fa-lg sidebar-btn__icon sidebar-btn-icon__hover" title="Close menu" aria-hidden="true"></span>
-        </div>
-
-        <!-- Sidebar brand name -->
-        <div class="sidebar-menu__brand"></div>
-        <!-- Sidebar links -->
-        <ul class="sidebar-menu__ul nav">
-            <li><a href="../profile/index.html">Profile</a></li>
-            <li><a href="../people/index.html">People</a></li>
-            <li class="active"><a href="../startups/index.html">Startups</a></li>
-            <li class="divider"></li>
-            <li><a href="../index.html">Logout</a></li>
-        </ul>
-
-    </div> <!-- / .sidebar-menu__ul -->
-
     <div class="container main">
         <div class="row">
             <div class="col s12 back clearfix">
                 <div class="row">
-                    <div class="col s12"><a href="0.html"><i class="fa fa-arrow-circle-left"></i> Back</a></div>
+                    <div class="col s12"><a href="idea_list.html"><i class="fa fa-arrow-circle-left"></i> Back</a></div>
                 </div>
             </div>
         </div>
@@ -81,6 +51,10 @@
                         </div>
                         <div class="modal-body">
                             <div class="input-field">
+                                <div class="input-field">
+                                    <textarea id="idea_description1" class="materialize-textarea" placeholder="Idea name"></textarea>
+                                    <label for="idea_description1">Idea</label>
+                                </div>
                                 <div class="input-field">
                                     <textarea id="idea_description1" class="materialize-textarea" placeholder="Поиск разовой работы для путешественников."></textarea>
                                     <label for="idea_description1">Value Proposition</label>
@@ -147,7 +121,6 @@
                         <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
                         <b>Problem Worth Solving</b>
                         <p>Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
-                        <p>Нужно установить первый OKR, что идея проходит если хотя бы 25 человек (лучше 100) проголосовало и их них >25% благосклонно отреанировали по poll, после чего кнопка становится зеленой, хотя ее нажать можно и раньше, но будет выдаваться предупреждение.</p>
                         <div class="col s12 text-center">
                             <button type="submit" class="waves-effect green waves-light btn-large btn-margin" onclick="Materialize.toast('Вскоре вы начнете получать первые отзывы от заинтересовавшихся идеей людей', 6000)">
                                 <i class="fa fa-thumbs-up fa-lg"></i>

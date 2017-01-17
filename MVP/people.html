@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kick Up Your Startup!">
+    <meta name="author" content="">
+    <title>Kick Up Startup</title>
+    <link href="../css/materialize.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="fullpage_nav nav navbar-nav pull-right">
+                        <li><a href="idea_list.html">Idea List</a></li>
+                        <li class="active"><a href="people.html">People</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main">
+        <div class="row">
+            <div class="col s12">
+                <div class="white row-border pointer clearfix" onclick="window.location = 'profile.html';">
+                    <div class="content text-center clearfix">
+                        <div class="banner" style="background: url(../img/banner-avatar.jpg) center center no-repeat"></div>
+                        <div class="avatar-photo"><img src="../img/avatar.jpg" /></div>
+                        <ul class="stat"><li><h3>John Smith</h3></li></ul>
+                        <ul class="stat"><li>London, United Kingdom</li></ul>
+                        <h4>Product Manager, Blockchain Enthusiast, Web, UI/UX Designer</h4>
+                    </div>
+                    <p>Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis.</p>
+                </div>
+                <div class="col s12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-border col s1"></div>
+                    </div>
+                </div>
+                <div class="white row-border pointer clearfix" onclick="window.location = 'profile.html';">
+                    <div class="content text-center">
+                        <div class="banner" style="background: url(../img/no-banner.png) center center no-repeat"></div>
+                        <div class="avatar-photo"><img src="../img/no-photo.png" /></div>
+                        <ul class="stat"><li><h3>Greg Brown</h3></li></ul>
+                        <ul class="stat"><li>New York, USA</li></ul>
+                        <h4>Headline</h4>
+                    </div>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac purus vitae mi fringilla pretium sit amet quis velit. Cras euismod nec diam tempus mattis. Donec risus dui, blandit at pulvinar sit amet, rutrum at ante. Aliquam ac rhoncus urna. Pellentesque lectus ante, viverra a elementum eget, congue ac mauris. Sed viverra vestibulum justo a pharetra. Fusce lacinia risus odio, ac ultricies nulla ultricies et.</p>
+                </div>
+                <div class="col s12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-border col s1"></div>
+                    </div>
+                </div>
+                <ul class="pagination text-center">
+                    <li class="disabled"><a href="#!"><span class="fa fa-chevron-circle-left fa-lg"></span></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><span class="fa fa-chevron-circle-right fa-lg"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
+</body>
+</html>

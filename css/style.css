@@ -30,7 +30,7 @@ html.welcome{
     .shadow .languages{color:#eee;text-align:center;padding-bottom:68px}
         .shadow .languages a{border-radius:4px;margin:0 12px;padding:8px 12px}
             .shadow .languages a.active{color:#333;background-color:#eee}
-    .main .languages{margin:20px -20px}
+    .main .languages{margin:20px -20px 0}
         .main .languages a{color:#333;margin:12px}
             .main .languages a{color:#333}
             .main .languages a:hover,.main .languages a.active{color:#039be5}
@@ -531,9 +531,10 @@ dd {
   padding-right: 15px;
 }
 .back a{color:#333333}
+    .back a:hover{color:#0072dc}
 @media (min-width: 768px) {
-    .back{background-color:#f9f9f9;margin-top:-20px;padding-top:20px!important;position:fixed;z-index:4}
-  .page .main{padding-top:90px}
+    .back{background-color:#f9f9f9;margin-top:-24px;padding-top:20px!important;position:fixed;z-index:4}
+  .page .main{padding-top:96px}
     .page .main-padding{padding-top:22px}
     .page .main.inner{padding-top:140px}
   .container {
@@ -2021,7 +2022,6 @@ button.close {
   display: block;
   color: #424242;
   text-decoration: none;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   -webkit-transition: color 0.3s;
@@ -3094,7 +3094,7 @@ fieldset[disabled] a.btn {
 @media (min-width: 768px) {
   .navbar-nav {
     float: left;
-    margin: 0;
+    margin: 0 -8px;
   }
   .navbar-nav > li {
     float: left;
@@ -3452,11 +3452,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     .card-nexus-the-end .content{padding-bottom:24px}
 .card-nexus-info-icon{color:#eee;position:relative;right:51px;margin-right:-16px}
 .card-nexus-info .content{padding-left:32px}
-.card-footer{margin:20px -25px 0}
+.card-footer{margin:24px -22px 6px}
   .card-footer button{color:#555;padding:0 18px;text-transform:none}
     .card-footer button:hover{background-color:transparent;color:#0072dc}
     .card-footer .fa{margin-right:5px}
-.modal-content .card-footer{margin:20px auto 0}
+.modal-content .card-footer{margin:20px -10px 0}
 .modal-title small{position:relative;top:-1px}
 
 .ticket-btn,.modal-footer a{color:#555;padding:15px}
@@ -3869,7 +3869,7 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .carousel-text h3{text-transform:uppercase;font-size:16px;font-weight:bold}
 .carousel-text h5{text-transform:uppercase;font-size:11px;font-weight:bold}
 .fixed-action-btn .fa{margin:0;line-height:26px}
-.btn-margin{margin:20px 0}
+.btn-margin{margin:24px 0}
 .content-no-header{margin-top:20px}
 .login-links{margin:5px 0 20px}
     .login-links p a:hover{text-decoration:none}
@@ -3905,8 +3905,12 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
 .modal .collection .collection-item:hover{background-color:#f9f9f9;cursor:pointer}
 .modal .collection .collection-item.avatar i.circle{background-color:#039be5}
 .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}
+.switch label input[type=checkbox]:checked + .lever{background-color:#818181}
+.switch label input[type=checkbox]:checked + .lever:after{background-color:#F1F1F1}
+.pagination li.active{background-color:#0072dc}
 /* material update END */
 .tips-blue{color:#31708f;background-color:#d9edf7!important;border-color:#bce8f1}
+.search{margin:32px 0 -20px}
 .tweet{margin-top:8px}
 .chat{border:none;margin:60px -15px 20px}
     .chat .collection-item{border:none}
@@ -3951,5 +3955,5 @@ sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;fon
     background-color: #5cb85c;
 }
 .poll p{padding:4px}
-.user-poll-section .panel-body{margin:18px 0 12px}
+.user-poll-section .panel-body{margin:18px 0 0}
 .user-poll-section .progress{height:5px}
