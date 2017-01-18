@@ -527,9 +527,10 @@ dd {
 .back a{color:#333333;padding:15px;  -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;}
-    .back a:hover{color:#ff9100;  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;}
+    .back a:hover{color:#ff9100;  -webkit-transition: all 0.2s ease-in-out
+  -o-transition: all 0.2s ease-in-out
+  transition: all 0.2s ease-in-out}
+.back .fa{margin-right:8px}
 @media (min-width: 768px) {
     .back{background-color:#f9f9f9;margin-top:-24px;padding-top:28px!important;position:fixed;z-index:4}
   .page .main{padding-top:86px}
@@ -1366,7 +1367,8 @@ fieldset[disabled] .radio label,
 fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
-.close {
+.card-top-icon{padding-top:24px;position:relative;right:-6px}
+.close,.card-top-icon {
   float: right;
   font-size: 21px;
   font-weight: bold;
@@ -3928,7 +3930,9 @@ a{color:#ff9100;
 .modal h3{font-weight:normal}
 .modal .collection .collection-item:hover{background-color:#f9f9f9;cursor:pointer}
 .modal .collection .collection-item.avatar i.circle{background-color:#039be5}
-.btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}
+.btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i{line-height:.75em}
+    .btn-large i{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}
+    .btn i{font-size:1em}
 .switch label input[type=checkbox]:checked + .lever{background-color:#818181}
 .switch label input[type=checkbox]:checked + .lever:after{background-color:#F1F1F1}
 .green:hover{background-color:#5eb762!important}

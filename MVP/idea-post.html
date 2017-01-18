@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col s12 back clearfix">
                 <div class="row">
-                    <div class="col s12"><a href="idea_list.html"><i class="fa fa-arrow-circle-left"></i> Back</a></div>
+                    <div class="col s12"><a href="idea_list.html"><i class="fa fa-arrow-circle-left"></i>Back</a></div>
                 </div>
             </div>
         </div>
@@ -45,31 +45,84 @@
         <div class="row">
             <div class="col s12">
                 <div class="white card row-border clearfix">
-                    <div class="card-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Idea</h3>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form">
-                                <div class="input-field">
-                                    <input placeholder="Around the World Jobs" id="idea_name" type="text" length="64">
-                                    <label for="idea_name">Idea name</label>
-                                </div>
-                                <div class="input-field">
-                                    <textarea id="idea_description1" class="materialize-textarea" placeholder="Поиск разовой работы для путешественников."></textarea>
-                                    <label for="idea_description1">Value Proposition</label>
-                                </div>
-                                <div class="input-field">
-                                    <textarea id="idea_description2" class="materialize-textarea" placeholder="Путешественникам сложно найти дополнительный заработок в чужой стране."></textarea>
-                                    <label for="idea_description2">Problem Worth Solving</label>
-                                </div>
+                    <i class="fa fa-lock card-top-icon pull-right" title="Not publicly visible"></i>
+                    <div class="modal-header">
+                        <h3 class="modal-title">Vague idea</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Если у вас пока нет сформулированной идеи, то начните с ее описания в свободной форме. Обязательно пригласите друзей, которые помогут вам с кристализацией идеи. В результате вы получите готовый текст для полей следующего блока.</p>
+                        <div class="form">
+                            <div class="input-field">
+                                <textarea id="description" class="materialize-textarea" rows="18" length="4096"></textarea>
+                                <label for="description">Description</label>
                             </div>
                         </div>
                         <div class="col s12 text-center">
-                            <button type="submit" class="activator waves-effect waves-light orange accent-3 btn-large btn-margin" onclick="Materialize.toast('Сongratulations! Информация опубликована. Вскоре вы начнете получать первые отзывы от заинтересовавшихся идеей людей', 6000)">
-                                <i class="fa fa-bullhorn fa-lg"></i>
-                                Ask people for a review
+                            <button type="submit" class="activator waves-effect waves-light orange accent-3 btn btn-margin">
+                                <i class="fa fa-envelope-open"></i>
+                                Invite friends to edit
                             </button>
+                            <div class="modal-bottom-link">
+                                <a href="#">I don't need it any more. Hide</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reveal">
+                        <button type="button" class="card-title close">&times;</button>
+                        <h3 class="modal-title">Invite friends to edit</h3>
+                        <div class="modal-body">
+                            <div class="form-group form clearfix">
+                                <div class="input-field">
+                                    <input id="emails" type="text" class="validate" placeholder="Please separate the recipients email by using commas">
+                                    <label for="emails">Emails</label>
+                                </div>
+                                <div class="input-field">
+                                    <textarea id="message" class="materialize-textarea validate" rows="6">Hello!&#10;Мне нужна помощь с написанием идеи нового стартапа.&#10;Спасибо!</textarea>
+                                    <label for="Message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col s12 text-center">
+                                <button type="submit" class="activator waves-effect waves-light orange accent-3 btn btn-margin" onclick="Materialize.toast('Emails has been sent', 8000)">
+                                    <span class="fa fa-envelope"></span>
+                                    <span>Send</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 clearfix">
+                    <div class="row card-nexus">
+                        <div class="col s1">&nbsp;</div>
+                        <div class="card-nexus-border col s1"></div>
+                    </div>
+                </div>
+                <div class="card white row-border clearfix">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Idea</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form">
+                            <div class="input-field">
+                                <input placeholder="Around the World Jobs" id="idea_name" type="text" length="64">
+                                <label for="idea_name">Idea name</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea id="value_proposition" class="materialize-textarea" placeholder="Поиск разовой работы для путешественников." length="256"></textarea>
+                                <label for="value_proposition">Value Proposition</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea id="problem_worth_solving" class="materialize-textarea" placeholder="Путешественникам сложно найти дополнительный заработок в чужой стране." length="256"></textarea>
+                                <label for="problem_worth_solving">Problem Worth Solving</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 text-center">
+                        <button type="submit" class="activator waves-effect waves-light orange accent-3 btn-large btn-margin" onclick="Materialize.toast('Сongratulations! Информация опубликована. Вскоре вы начнете получать первые отзывы от заинтересовавшихся идеей людей', 6000)">
+                            <i class="fa fa-bullhorn fa-lg"></i>
+                            Ask people for a review
+                        </button>
+                        <div class="modal-bottom-link">
+                            <a href="#">I need help answering questions</a>
                         </div>
                     </div>
                 </div>
