@@ -15,8 +15,8 @@ body {
   font-size: 15px;
   line-height: 1.42857143;
 }
-html.welcome{ 
-  background:url(../img/bg-pattern.png),  url(../img/welcome.jpg) no-repeat center center fixed; 
+html.welcome{
+  background:url(../img/bg-pattern.png),  url(../img/welcome.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -46,36 +46,79 @@
         <div class="container main">
             <h3>Validate Idea</h3>
             <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#!">Draft</a></li>
+                <li role="presentation"><a href="idea-post.html">Draft</a></li>
                 <li role="presentation"><a href="idea-story.html">Story</a></li>
-                <li role="presentation"><a href="idea-audience.html">Audience</a></li>
+                <li role="presentation" class="active"><a href="#!">Audience</a></li>
                 <li role="presentation"><a href="idea-preview.html">Preview</a></li>
             </ul>
         </div>
     </div>
     <div class="container main">
         <div class="row">
-                <div class="alert alert-info clearfix" role="alert">
-                    <h4>Tip: Dapibus nec</h4>
-                    <p>Начните с описания идеи в свободной форме. Обязательно пригласите друзей, которые помогут вам с кристализацией идеи. В результате вы получите информацию необходимую для заполнения
-                        следующих блоков.
-                    </p>
-                    <ul class="controls right">
-                        <li><a href="#!"><i class="fa fa-chevron-circle-left"></i></a></li>
-                        <li><span>3 of 5</span></li>
-                        <li><a href="#!"><i class="fa fa-chevron-circle-right"></i></a></li>
-                    </ul>
-                </div>
+            <div class="alert alert-info clearfix" role="alert">
+                <h4>Tip: Dapibus nec</h4>
+                <p>Подсказать как нужно написать историю, чтобы был крючок эмпатии. Неплохо, чтобы было немного юмора, немного поучительного и собственного опыта, чтобы люди эмоционально отреагировали.
+                </p>
+                <ul class="controls right">
+                    <li><a href="#!"><i class="fa fa-chevron-circle-left"></i></a></li>
+                    <li><span>1 of 4</span></li>
+                    <li><a href="#!"><i class="fa fa-chevron-circle-right"></i></a></li>
+                </ul>
+            </div>
             <div class="white card row-border clearfix">
                 <div class="modal-header">
                     <span class="saving_status right">Saving...</span>
-                    <h3 class="modal-title">Write</h3>
+                    <h3 class="modal-title">Target Audience</h3>
                 </div>
                 <div class="modal-body">
-                  <img src="../img/draft.png" alt="" width="100%">
-                    <div class="col s12">
-                      <a href="#!" class="card-lock-icon tooltipped left" data-position="left" data-delay="50" data-tooltip="Not publicly visible"><i class="fa fa-lock"></i>Private</a>
+                  <div class="input-field col s12">
+                      <select>
+                        <option value="1">English</option>
+                        <option value="2">Deutsch</option>
+                        <option value="3">Français</option>
+                        <option value="4">Русский</option>
+                        <option value="5">Español</option>
+                      </select>
+                      <label>Language</label>
+                  </div>
+                    <div class="input-field col s12">
+                        <select multiple>
+                          <option value="1">America</option>
+                          <option value="2">Europe</option>
+                          <option value="3">Asia</option>
+                          <option value="4">Australia</option>
+                          <option value="5">Africa</option>
+                        </select>
+                        <label>Geographic</label>
                     </div>
+                      <div class="input-field col s12">
+                          <select multiple>
+                            <option value="2">Children</option>
+                            <option value="3">Teens</option>
+                            <option value="4">Adults</option>
+                            <option value="5">Seniors</option>
+                          </select>
+                          <label>Demographic</label>
+                      </div>
+                    <div class="input-field col s12">
+                        <select multiple>
+                          <option value="1">Arts, Entertainment and Hobbies</option>
+                          <option value="2">Finance and Business</option>
+                          <option value="3">Clothing, Accessories and Shoes</option>
+                          <option value="4">Food and Health</option>
+                          <option value="4">General Consumer</option>
+                          <option value="4">Science and Education</option>
+                          <option value="4">Nonprofit</option>
+                          <option value="4">Animals and pets</option>
+                          <option value="4">Travel and Sports</option>
+                          <option value="4">Technology</option>
+                          <option value="4">Home, Family and Gifts</option>
+                          <option value="4">Other</option>
+                        </select>
+                        <label>Interests</label>
+                    </div>
+                </div>
+                <div class="panel-footer">
                 </div>
             </div>
             <div class="col s12 clearfix">
@@ -85,9 +128,12 @@
                 </div>
             </div>
             <div class="col s12 text-center">
-              <button type="submit" onclick="window.location = 'idea-story.html'" class="activator waves-effect waves-light orange accent-3 btn btn-margin">
-                Ready to tell my story
+              <button type="submit" onclick="window.location = 'idea-preview.html'" class="activator waves-effect waves-light orange accent-3 btn btn-margin">
+                Preview
               </button>
+          <div class="modal-bottom-link">
+              <a href="idea-story.html">Back</a>
+          </div>
             </div>
         </div>
     </div>
@@ -153,4 +199,9 @@
             }
         ];
         Materialize.scrollFire(options);
+
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+
     </script>

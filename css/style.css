@@ -6,7 +6,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 html {
-  background-color: #f9f9f9;
+  background-color: #fcfcfc;
   font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -38,6 +38,9 @@ html.welcome{
     .heading .text-primary{color:#ff9100}
 .logo{background:url(../img/logo.png) no-repeat center center;height:72px;width:72px;z-index:99}
   .logo:hover{color:#fff}
+.main-grey{background-color:#f9f9f9;border-bottom:1px solid #eee;position:fixed;width:100%;z-index:9}
+  .main-grey h3{margin:12px 12px 28px}
+  .main-grey .main{padding:0 24px}
 @media print {
   *,
   *:before,
@@ -541,9 +544,14 @@ dd {
     /*color: #666;
     background-color: #f2f2f2;*/
 }
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
 .alert {
     padding:20px 26px;
-    margin:20px 0 40px;
+    margin:0 0 20px;
     border-radius: 4px;
 }
 .alert h4{margin:0 0 12px}
@@ -557,7 +565,8 @@ dd {
 @media (min-width: 768px) {
   .logo{position:fixed}
   .page .title{padding:72px 10px 10px}
-  .page .main{padding-top:90px}
+  .page .main{padding-top:215px}
+  .main-grey .main{padding-top:90px}
     .page .main.inner{padding-top:140px}
   .container {
     max-width: 620px;
@@ -1390,7 +1399,10 @@ fieldset[disabled] .radio label,
 fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
-.card-top-icon{position:relative;right:-6px;top:24px}
+.card-lock-icon{color:#ccc;margin:32px 0}
+.back-link{margin:32px 0}
+  .back-link .fa{margin-right:6px}
+  .back-link a{color:#ccc}
 .close,.card-top-icon {
   float: right;
   font-size: 21px;
@@ -2804,7 +2816,7 @@ fieldset[disabled] a.btn {
   max-width: none;
 }
 .nav-tabs {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #eee;
 }
 .nav-tabs > li {
   float: left;
@@ -2818,14 +2830,14 @@ fieldset[disabled] a.btn {
   padding:10px 15px;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #f2f2f2;
+  color:#ff9100
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #ffffff;
-  border: 1px solid #f2f2f2;
+  background-color: #fcfcfc;
+  border: 1px solid #eee;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -3518,17 +3530,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .editable{border-bottom:1px solid #f2f2f2}
 .editable{display:inline-block;padding:10px;margin:0 -4px}
   .editable.avatar-photo:hover img{box-shadow:0 0 0 1px #ccc}
-  .banner-edit{background:url(../img/edit-banner.png) no-repeat!important}
-  .banner-edit:hover{box-shadow:0 0 0 1px #ccc;cursor:pointer}
+  .banner-edit{background:url(../img/edit-banner.png) no-repeat!important;opacity:.75}
+  .banner-edit:hover{cursor:pointer;opacity:1}
 .editable:focus{border-bottom:1px solid #0072dc;color:#111;outline:none}
 .editable_checkbox{margin:4px!important;position:relative;top:1px}
-.lock,.lock-info{background-color:#f9f9f9!important;border-color:#eee;color:rgba(0, 0, 0, 0.5);
+.lock,.lock-info{background-color:#fcfcfc!important;border-color:#eee;color:rgba(0, 0, 0, 0.5);
   -webkit-transition:border-color .5s ease,color .5s ease;
   -o-transition:border-color .5s ease,color .5s ease;
   transition:border-color .5s ease,color .5s ease}
   .lock:hover{background-color:#eee;border-color:#ccc;cursor:pointer;color:rgba(0, 0, 0, 0.87)}
   .lock h5{margin:0}
 .modal-body .form{margin:24px 0 -12px}
+.panel-footer{margin:24px 0}
 h3.editable,h4.editable{margin:0}
 sup.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:10px;font-weight:700;line-height:1;color:#fff;
   text-align:center;white-space:nowrap;vertical-align:middle;background-color:#0072dc;border-radius:12px;
@@ -3930,6 +3943,9 @@ a{color:#ff9100;
     -o-transition: color .6s ease;
     transition: color .6s ease;}
 .orange.accent-3:hover{background-color:#ffab40!important;color:#fff}
+.dropdown-content li > a, .dropdown-content li > span{color:#ffab40}
+[type="checkbox"]:checked + label:before{border-right-color:#ffab40;border-bottom-color:#ffab40}
+.dropdown-content li.selected,.dropdown-content li.active.selected,.dropdown-content li:hover,.dropdown-content li.active{background-color:#fff}
 .card{margin:0!important}
     .card .tips a{color:#555;float:right}
         .card .tips a:hover{color:#0072dc}
