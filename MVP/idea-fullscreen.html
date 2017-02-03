@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kick Up Your Startup!">
+    <meta name="author" content="">
+    <title>Kick Up Startup</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="../css/materialize.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="page editor">
+    <div class="main-grey">
+        <a href="idea-post.html" class="editor-close right"><i class="fa fa-window-close fa-lg"></i></a>
+        <span class="saving_status right">Saving...</span>
+        <div class="container">
+            <ul class="editor-menu">
+                <li class="active"><a href="#!">H1</a></li>
+                <li><a href="#!">H2</a></li>
+                <li><a href="#!">UL</a></li>
+                <li><a href="#!">OL</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container main">
+        <div class="row">
+          <h1>Header</h1>
+          <p>Text here</p>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <script type="text/javascript">
+        $('.input-field').click(function() {
+            $('#tips').removeClass('hide');
+        });
+        var options = [{
+                selector: '#staggered-test',
+                offset: 50,
+                callback: function(el) {
+                    Materialize.toast("This is our ScrollFire Demo!", 1500);
+                    $("#call-1").velocity({
+                        backgroundColor: "#333",
+                        color: "#ef5350"
+                    }, {
+                        duration: 500
+                    });
+                }
+            },
+            {
+                selector: '#staggered-test',
+                offset: 205,
+                callback: function(el) {
+                    Materialize.toast("Please continue scrolling!", 1500);
+                    $("#call-2").velocity({
+                        backgroundColor: "#333",
+                        color: "#ef5350"
+                    }, {
+                        duration: 500
+                    });
+                }
+            },
+            {
+                selector: '#staggered-test',
+                offset: 500,
+                callback: function(el) {
+                    Materialize.showStaggeredList($(el));
+                    $("#call-3").velocity({
+                        backgroundColor: "#333",
+                        color: "#ef5350"
+                    }, {
+                        duration: 500
+                    });
+                }
+            },
+            {
+                selector: '#tips',
+                offset: 500,
+                callback: function(el) {
+                    Materialize.fadeInImage($(el));
+                    $("#call-4").velocity({
+                        backgroundColor: "#333",
+                        color: "#ef5350"
+                    }, {
+                        duration: 500
+                    });
+                }
+            }
+        ];
+        Materialize.scrollFire(options);
+    </script>
